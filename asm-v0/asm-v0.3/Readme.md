@@ -60,7 +60,8 @@
 </p>
 
 ## 🚀 Significance
-- This version lays the groundwork for transitioning from a translator to a true assembler — introducing language structure, logic, and feedback. It also represents a self-taught implementation of key compiler design concepts that will be formalized in later versions.
+- This version lays the groundwork for transitioning from a translator to a true assembler - introducing language structure, logic, and feedback. It also represents a self-taught implementation of key compiler design concepts that will be formalized in later versions.
+
 
 
 
