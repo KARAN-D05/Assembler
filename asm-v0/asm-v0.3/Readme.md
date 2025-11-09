@@ -19,9 +19,9 @@
 </p>
    
 2. 🧮 Primitive Semantic Analysis
-  - Checks for logical execution order (e.g., preventing arithmetic operations before any data load).
-  - Detects invalid machine states (e.g., system reset or override at incorrect times).
-  - Ensures the assembler halts gracefully with descriptive error messages.
+  - Checks for logical execution order (e.g. preventing arithmetic operations before any data load).
+  - Detects invalid machine states (e.g. system reset or override at incorrect times).
+  - Ensures the assembler halts with descriptive error messages.
     
    <p align="center">
   <img src="images/semantic_analysis.png" 
@@ -61,6 +61,7 @@
 
 ## 🚀 Significance
 - This version lays the groundwork for transitioning from a translator to a true assembler - introducing language structure, logic, and feedback. It also represents a self-taught implementation of key compiler design concepts that will be formalized in later versions.
+
 
 
 
