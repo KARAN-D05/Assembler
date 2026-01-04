@@ -31,7 +31,7 @@
 
 # 🚀 Future Development 
 - Advanced Semantic Analysis for the assembly language, enabling validation and structured interpretation of programs before translation to machine code.
-- Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code.
+- Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code - `MACROS`
   
 # 🧰 Computing Machinery from Scratch
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
