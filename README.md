@@ -40,3 +40,8 @@
 ## 🧰 Computing Machinery from Scratch
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
 - [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
+
+## 📜 License
+
+- Source code, HDL, and Logisim circuit files are licensed under the MIT License.
+- Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
