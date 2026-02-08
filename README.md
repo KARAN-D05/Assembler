@@ -10,7 +10,7 @@
   <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
 </p>
 
-# 🧱 Versions Built
+## 🧱 Versions Built
 - [asmv0.1](asm-v0/asm-v0.1) -> Mapped Data control operations to assembly Language.
 - [asmv0.2](asm-v0/asm-v0.2) -> Mapped arithmetic, system and temporal Control to assembly Language.
 - [asmv0.3](asm-v0/asm-v0.3) -> Added Syntax Analysis, primitive semantic analysis and an instruction execution report.
@@ -29,10 +29,14 @@
   <sub><b>🕵️ Semantic Analysis - Assembler v0.3</b></sub>
 </p>
 
-# 🚀 Future Development 
+## 🧩 Latest Development 
+- Syntax Analysis of assembly program before being processed by assembler to save computational resources.
+- Primitive semantic analysis to detect logical flaws in assembly program before converting to machine code. 
+
+## 🚀 Future Development 
 - Advanced Semantic Analysis for the assembly language, enabling validation and structured interpretation of programs before translation to machine code.
 - Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code - `MACROS`
   
-# 🧰 Computing Machinery from Scratch
+## 🧰 Computing Machinery from Scratch
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
 - [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
