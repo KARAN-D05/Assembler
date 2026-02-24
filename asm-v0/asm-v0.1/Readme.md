@@ -1,4 +1,5 @@
-# 🧩 asm-v0.1 - Data Load & Store
+# 🧩 asm-v0.1 - Data Load & Store Mnemonics
+
 - Mapped machine code instrcutions for loading data onto lines and storing it to registers using mnemonics.
 
 - Built a Simple program where you can enter your assembly commands one by one, and it generates the corresponding machine code for LOAD and STORE operations
@@ -40,4 +41,5 @@
 
 ## 🧠Summary:
 - This version establishes the foundation for symbolic instruction mapping, converting human-readable mnemonics into hardware-level signals.
+
 
