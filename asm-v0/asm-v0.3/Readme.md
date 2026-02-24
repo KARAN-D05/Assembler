@@ -57,5 +57,5 @@
   <img src="images/asmv0.3_output.png" 
        alt="asmv0.3 Assembler Output" width="600"/>
   <br>
-  <sub><b>💾 asmv0.3 - Assembler Output with Instruction Execution Report</b></sub>
+  <sub><b>💾 asmv0.3 - Assembler Output with Instruction Execution Report </b></sub>
 </p>
