@@ -1,4 +1,4 @@
-## ⚙️ asm-v0.2 - Full Machine Code Mapping
+# ⚙️ asm-v0.2 - Full Machine Code Mapping
 - 🧩 Complete Mapping
   -  All machine code instructions are now mapped to their Assembly Language mnemonics.
 - 🕒 Temporal Control Added
@@ -15,7 +15,7 @@
   <sub><b>💾 asmv0.2 - Machine Code Output and Mnemonic Mapping</b></sub>
 </p>
 
-**🔡 Machine Code -> Mnemonic Mapping**
+## 🔡 Machine Code -> Mnemonic Mapping
 - 🧠Mnemonic 1: LOAD-S-XXXX
    - As opposed to LOAD mnemonic of v0.1, this LOAD handles data loading onto lines as well as Storing the data, so no need for seperate STORE instruction.
    - S (Selector)
@@ -58,12 +58,6 @@
 - 🧠Easier reasoning about logic and data-flow
 - ⚡Less manual error when encoding binary instructions
 - 🤝Acts as a bridge between human logic and hardware signal execution.
-
-
-
-
-
-
 
 
 
