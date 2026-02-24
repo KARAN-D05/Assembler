@@ -1,9 +1,9 @@
-## 🧩 asm-v0.1 - Data Load & Store
-- 🧠Mapped machine code instrcutions for loading data onto lines and storing it to registers using mnemonics.
+# 🧩 asm-v0.1 - Data Load & Store
+- Mapped machine code instrcutions for loading data onto lines and storing it to registers using mnemonics.
 
-- 💻Built a Simple program where you can enter your assembly commands one by one, and it generates the corresponding machine code for LOAD and STORE operations
+- Built a Simple program where you can enter your assembly commands one by one, and it generates the corresponding machine code for LOAD and STORE operations
 
-- 🧾Serves as a Proof of concept for assembler-to-machine code translation.
+- Serves as a Proof of concept for assembler-to-machine code translation.
 
 <p align="center">
   <img src="images/machine-code output.png" 
@@ -12,7 +12,7 @@
   <sub><b>💾 asmv0.1 - Machine Code Output and LOAD/STORE Mapping</b></sub>
 </p>
 
-**🔡Machine Code -> mnemonic Mapping**
+## 🔡Machine Code -> mnemonic Mapping
 - Mnemonic 1: LOAD-S-XXXX
    - This mnemonic has the functionality of loading data onto the data lines.
    - S is used to denote the selector, a pin in our computing machine to select the register in which we want to store data, register A(S=0) or register B(S=1)
@@ -40,7 +40,4 @@
 
 ## 🧠Summary:
 - This version establishes the foundation for symbolic instruction mapping, converting human-readable mnemonics into hardware-level signals.
-
-
-
 
