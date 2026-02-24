@@ -1,4 +1,4 @@
-# ⚙️ asm-v0.2 - Full Machine Code Mapping
+# ⚙️ asm-v0.2 - Full Machine Code-Mnemonic Mapping
 -  Complete Mapping
   -  All machine code instructions are now mapped to their Assembly Language mnemonics.
 -  Temporal Control Added
@@ -58,6 +58,7 @@
 - Easier reasoning about logic and data-flow
 - Less manual error when encoding binary instructions
 - Acts as a bridge between human logic and hardware signal execution.
+
 
 
 
