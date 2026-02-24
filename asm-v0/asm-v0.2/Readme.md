@@ -1,12 +1,11 @@
 # ⚙️ asm-v0.2 - Full Machine Code-Mnemonic Mapping
--  Complete Mapping
-  -  All machine code instructions are now mapped to their Assembly Language mnemonics.
+-  All machine code instructions are now mapped to their Assembly Language mnemonics.
 -  Temporal Control Added
-  -  Arithmetic operations can now be held for a specified number of clock cycles.
+-  Arithmetic operations can now be held for a specified number of clock cycles.
 -  Hardware Arithmetic Enabled
-  - All arithmetic operations supported by the hardware can now be executed symbolically.
+- All arithmetic operations supported by the hardware can now be executed symbolically.
 -  Full Control
-  - Assembly programs can now fully control machine behavior using mnemonic-based instructions.
+- Assembly programs can now fully control machine behavior using mnemonic-based instructions.
 
 <p align="center">
   <img src="images/machine-code-output.png" 
@@ -58,6 +57,7 @@
 - Easier reasoning about logic and data-flow
 - Less manual error when encoding binary instructions
 - Acts as a bridge between human logic and hardware signal execution.
+
 
 
 
