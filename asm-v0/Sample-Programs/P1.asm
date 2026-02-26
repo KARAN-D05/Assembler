@@ -2,9 +2,9 @@
 // asm-v0.1 has seperate instructions for bringing Data on the Line (LOAD-S-XXXX) and then storing it (STORE)
 
 LOAD-0-1001 // Load 1001 on Data Lines
-STORE // Store data in Register A
+STORE       // Store data in Register A
 LOAD-1-1100 // Load 1100 on Data Lines
-STORE // Store data in Register B
+STORE       // Store data in Register B
 
 // asm-v0.2, No STORE mnemonic, abstracted away with LOAD-S-XXXX mnemonic - Load Data on lines and also store them in the register.
 
