@@ -1,4 +1,5 @@
 // asm-v0 follows Big-Endian format, hence XXXX corresponds to 1 2 4 8.
+
 // asm-v0.1 has seperate instructions for bringing Data on the Line (LOAD-S-XXXX) and then storing it (STORE)
 
 LOAD-0-1001 // Load 1001 on Data Lines
