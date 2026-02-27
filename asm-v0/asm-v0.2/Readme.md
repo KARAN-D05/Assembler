@@ -22,7 +22,13 @@
      - 1 = Register B
    - XXXX (Data Bits)
      - XXXX Corresponds to value 1, 2, 4, 8 respectively.
-       
+   - asm-v0 bit indexing convention:-
+     - Bit 0 is MSB (weight 8)
+     - Bit 3 is LSB (weight 1)
+   - Instruction Data Field Layout:-
+     - index  -> [3] [2] [1] [0]
+     - weight ->  1   2   4   8 
+  
 - Mnemonic 2: FBK
    - Feeds back the output into Register A, overriding its contents.
 
@@ -57,6 +63,7 @@
 - Easier reasoning about logic and data-flow
 - Less manual error when encoding binary instructions
 - Acts as a bridge between human logic and hardware signal execution.
+
 
 
 
