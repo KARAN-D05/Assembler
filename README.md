@@ -7,11 +7,11 @@
 <p align="center">
   <img src="asm-v0/mnemonic-chart.png" width="800"/>
   <br>
-  <sub><b> 🧾 Custom Assembly Language Instructions - asm-v0
+  <sub><b> 🧾 Custom Assembly Language Instructions - asm-v0 </b></sub>
 </p>
 
 ## ⚙️ Implementation Stack
-[Python](https://img.shields.io/badge/Python-00B0FF?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-00B0FF?style=for-the-badge)
 ![Custom Assembly](https://img.shields.io/badge/Custom%20Assembly-D50000?style=for-the-badge)
 
 ## 🧱 Versions Built
