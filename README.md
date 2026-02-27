@@ -10,6 +10,10 @@
   <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
 </p>
 
+## ⚙️ Implementation Stack
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logoColor=black)
+![Custom Assembly](https://img.shields.io/badge/Custom%20Assembly-D50000?style=for-the-badge)
+
 ## 🧱 Versions Built
 - [asmv0.1](asm-v0/asm-v0.1) -> Mapped Data control operations to assembly Language.
 - [asmv0.2](asm-v0/asm-v0.2) -> Mapped arithmetic, system and temporal Control to assembly Language.
