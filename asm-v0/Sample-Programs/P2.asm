@@ -1,8 +1,8 @@
-// asm-v0 bit indexing convention:
+// asm-v0 bit indexing convention:-
 // Bit 0 is MSB (weight 8)
 // Bit 3 is LSB (weight 1)
 
-// Instruction Field Layout:
+// Instruction Data Field Layout:-
 // index  -> [3] [2] [1] [0]
 // weight ->  1   2   4   8
 
