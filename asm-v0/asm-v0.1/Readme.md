@@ -23,7 +23,7 @@
      - Bit 3 is LSB (weight 1)
    - Instruction Data Field Layout:-
      - index  -> [3] [2] [1] [0]
-     - weight ->  1%202%204%208 
+     - weight ->  1   2   4   8 
   - We have to enter the instruction along with hyphens (-) as mentioned above.
 
 - Mnemonic 2: STORE
@@ -47,6 +47,7 @@
 
 ## 🧠Summary:
 - This version establishes the foundation for symbolic instruction mapping, converting human-readable mnemonics into hardware-level signals.
+
 
 
 
