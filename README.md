@@ -5,7 +5,7 @@
  mnemonics we get -**The Assembly Language**.
 
 <p align="center">
-  <img src="asm-v0/asm-v0.2/images/machine-code-output.png" alt="Machine Code Output v0.2" width="600"/>
+  <img src="asm-v0/asm-v0-instructions.png" alt="CustomAssembly Language Instructions" width="500"/>
   <br>
   <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
 </p>
@@ -18,6 +18,12 @@
 - [asmv0.1](asm-v0/asm-v0.1) -> Mapped Data control operations to assembly Language.
 - [asmv0.2](asm-v0/asm-v0.2) -> Mapped arithmetic, system and temporal Control to assembly Language.
 - [asmv0.3](asm-v0/asm-v0.3) -> Added Syntax Analysis, primitive semantic analysis and an instruction execution report.
+
+<p align="center">
+  <img src="asm-v0/asm-v0.2/images/machine-code-output.png" alt="Machine Code Output v0.2" width="600"/>
+  <br>
+  <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
+</p>
 
 <p align="center">
   <img src="asm-v0/asm-v0.3/images/syntax_analysis1.png" 
