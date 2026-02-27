@@ -1,5 +1,12 @@
+// asm-v0 bit indexing convention:
+// Bit 0 is MSB (weight 8)
+// Bit 3 is LSB (weight 1)
+
+// Instruction Field Layout:
+// index  -> [3] [2] [1] [0]
+// weight ->  1   2   4   8
+
 // asm-v0.2, No STORE mnemonic, abstracted away with LOAD-S-XXXX mnemonic - Load Data on lines and also store them in the register.
-// asm-v0.2 follows Big-Endian format, hence XXXX corresponds to 1 2 4 8.
 
 LOAD-0-0110 // Load 0110(6) in Register A
 LOAD-1-0001 // Load 0001(8) in Register B
