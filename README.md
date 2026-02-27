@@ -5,9 +5,9 @@
  mnemonics we get -**The Assembly Language**.
 
 <p align="center">
-  <img src="asm-v0/asm-v0-instructions.png" alt="CustomAssembly Language Instructions" width="500"/>
+  <img src="asm-v0/asm-v0-instructions.jpg" alt="Custom Assembly Language Instructions" width="500"/>
   <br>
-  <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
+  <sub><b>🧾 Custom Assembly Language Instructions
 </p>
 
 ## ⚙️ Implementation Stack
