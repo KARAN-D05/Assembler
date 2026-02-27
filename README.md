@@ -5,7 +5,7 @@
  mnemonics we get -**The Assembly Language**.
 
 <p align="center">
-  <img src="asm-v0/asm-v0-instructions.jpg" alt="Custom Assembly Language Instructions" width="1000"/>
+  <img src="asm-v0/asm-v0-instructions.jpg" alt="Custom Assembly Language Instructions" width="1500"/>
   <br>
   <sub><b>🧾 Custom Assembly Language Instructions
 </p>
