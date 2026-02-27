@@ -32,13 +32,6 @@
 </p>
 
 <p align="center">
-  <img src="asm-v0/asm-v0.3/images/syntax_analysis1.png" 
-       alt="asmv0.3 Syntax Analysis" width="600"/>
-  <br>
-  <sub><b>🔍 Syntax Analysis - Assembler v0.3</b></sub>
-</p>
-
-<p align="center">
   <img src="asm-v0/asm-v0.3/images/semantic_analysis.png" 
        alt="asmv0.3 Semantic Analysis" width="600"/>
   <br>
