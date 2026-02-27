@@ -18,7 +18,13 @@
    - This mnemonic has the functionality of loading data onto the data lines.
    - S is used to denote the selector, a pin in our computing machine to select the register in which we want to store data, register A(S=0) or register B(S=1)
    - XXXX are binary value corresponding to 1, 2, 4 and 8 repectively, 0011 corresponds to 12.
-   - We have to enter the instruction along with hyphens (-) as mentioned above.
+   - asm-v0 bit indexing convention:-
+     - Bit 0 is MSB (weight 8)
+     - Bit 3 is LSB (weight 1)
+   - Instruction Data Field Layout:-
+     - index  -> [3] [2] [1] [0]
+     - weight ->  1   2   4   8
+  - We have to enter the instruction along with hyphens (-) as mentioned above.
 
 - Mnemonic 2: STORE
   - Thus mnemonic has the functionality of storing the data on lines to the storage elements like registers.
@@ -41,6 +47,7 @@
 
 ## 🧠Summary:
 - This version establishes the foundation for symbolic instruction mapping, converting human-readable mnemonics into hardware-level signals.
+
 
 
 
