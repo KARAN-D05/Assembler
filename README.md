@@ -5,9 +5,9 @@
  mnemonics we get -**The Assembly Language**.
 
 <p align="center">
-  <img src="asm-v0/asm-v0.2/images/machine-code-output.png" alt="Machine Code Output v0.2" width="600"/>
+  <img src="asm-v0/mnemonic-chart.png" width="800"/>
   <br>
-  <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
+  <sub><b> 🧾 Custom Assembly Language Instructions - asm-v0
 </p>
 
 ## ⚙️ Implementation Stack
@@ -20,11 +20,10 @@
 - [asmv0.3](asm-v0/asm-v0.3) -> Added Syntax Analysis, primitive semantic analysis and an instruction execution report.
 
 <p align="center">
-  <img src="asm-v0/mnemonic-chart.png" width="800"/>
+  <img src="asm-v0/asm-v0.2/images/machine-code-output.png" alt="Machine Code Output v0.2" width="600"/>
   <br>
-  <sub><b> 🧾 Assembly Language Instructions
+  <sub><b>🧾 Machine Code Output - Assembler v0.2</b></sub>
 </p>
-
 
 <p align="center">
   <img src="asm-v0/asm-v0.3/images/syntax_analysis1.png" 
