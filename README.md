@@ -20,9 +20,9 @@
 - [asmv0.3](asm-v0/asm-v0.3) -> Added Syntax Analysis, primitive semantic analysis and an instruction execution report.
 
 <p align="center">
-  <img src="asm-v0/mnemonic-chart.png" width="1200"/>
+  <img src="asm-v0/mnemonic-chart.png" width="800"/>
   <br>
-  <sub><b> 🧾 Assembly Lnaguage Instructions
+  <sub><b> 🧾 Assembly Language Instructions
 </p>
 
 
