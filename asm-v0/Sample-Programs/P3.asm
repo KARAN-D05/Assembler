@@ -79,8 +79,8 @@ full convergence and stable output.
 
 After HOLD duration expires:
 System automatically returns to Default Operation (ADD)
-but Division Output stays as they are shown on seperate 
-output lines.
+but Division Output remains latched on the dedicated 
+division output lines.
 
 ----------------------------------------------------
 Final System State
