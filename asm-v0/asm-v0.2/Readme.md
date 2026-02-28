@@ -60,7 +60,6 @@
 
 ## 🧾Summary
 - This version mapped the entire machine functionality from machine code instructions to Assembly languauge instructions.
-- Easier reasoning about logic and data-flow
-- Less manual error when encoding binary instructions
+- Easier reasoning about logic and data-flow.
+- Less manual error when encoding binary instructions.
 - Acts as a bridge between human logic and hardware signal execution.
-
