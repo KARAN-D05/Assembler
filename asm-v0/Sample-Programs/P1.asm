@@ -20,7 +20,74 @@ STORE       // Store data in Register B
 LOAD-0-1001 // Load 1001(9) on Data Lines and Store in Register A
 LOAD-1-1100 // Load 1100(3) on Data Lines and store in Register B
 
-# OUTPUT -> This Program will load 1001 (9) in Register A and 1100(3) in Register B. At Output we will see A + B = 0011(12) as ADD is default Arithmetic Operation.
+----------------------------------------------------
+# EXECUTION TRACE                                  
+----------------------------------------------------
+
+Initial State:
+A = 0000 (0)
+B = 0000 (0)
+Output = 0000 (0)
+
+----------------------------------------------------
+asm-v0.1 Execution (LOAD + STORE separated)
+----------------------------------------------------
+
+1) LOAD-0-1001
+   Data Lines ← 1001 (9)
+
+2) STORE
+   Register A ← 1001 (9)
+
+   Current State:
+   A = 1001 (9)
+   B = 0000 (0)
+
+3) LOAD-1-1100
+   Data Lines ← 1100 (3)
+
+4) STORE
+   Register B ← 1100 (3)
+
+   Current State:
+   A = 1001 (9)
+   B = 1100 (3)
+
+----------------------------------------------------
+asm-v0.2 / asm-v0.3 Execution (STORE abstracted)
+----------------------------------------------------
+
+1) LOAD-0-1001
+   Register A ← 1001 (9)
+
+2) LOAD-1-1100
+   Register B ← 1100 (3)
+
+   Current State:
+   A = 1001 (9)
+   B = 1100 (3)
+
+----------------------------------------------------
+Arithmetic Operation
+----------------------------------------------------
+
+Default Operation: ADD
+
+A + B = 9 + 3 = 12
+Binary Output = 0011 (12)
+
+----------------------------------------------------
+Final System State
+----------------------------------------------------
+
+Register A = 1001 (9)
+Register B = 1100 (3)
+Output     = 0011 (12)
+
+No overflow occurs.
+No error detection triggered.
+Clock continues normally.
+----------------------------------------------------
 
 // It is advised to Use asm-v0.3 Standard Assembler:-
 // Features like Syntax and Semantic Analysis.
