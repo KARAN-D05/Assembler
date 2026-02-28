@@ -2,7 +2,7 @@
 
 ## 🧩 Overview
 - In this version, the assembler evolves from a simple instruction-to-machine-code translator into an early-stage compiler system capable of performing syntax validation and primitive semantic checks.
-- The assembler now ensures that every assembly instruction follows valid structural rules (syntax) and that operations occur in a meaningful order (basic semantics).
+- The assembler now ensures that every assembly instruction follows valid structural rules (syntax) and that operations occur in a meaningful order (basic semantic checks).
 
 ## ⚙️ Key Features
 1. 🧾 Syntax Analysis
