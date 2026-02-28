@@ -19,5 +19,3 @@ LOAD-0-1001 // Load 1001(9) on Data Lines and Store in Register A
 LOAD-1-1100 // Load 1100(3) on Data Lines and store in Register B
 
 OUTPUT -> This Program will load 1001 (9) in Register A and 1100(3) in Register B. At Output we will see A + B = 0011(12) as ADD is default Arithmetic Operation.
-
-Refer [asm-v0.1](../asm-v0.1)
