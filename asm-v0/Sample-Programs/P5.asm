@@ -19,6 +19,32 @@ HOLD-OP     // Hold operation/output
 OVRD        // Override System Halt
 FBK         // Feed output back to A
 
+# Execution Trace:
+
+Initial:
+A = 8
+B = 4
+
+After 1st ADD:
+Output = 12
+
+After FBK:
+A = 12
+B = 4
+
+After 2nd ADD:
+Output = 16 (Overflow)
+
+System Response:
+- Overflow detected
+- Clock disengaged
+- System halted
+- LEDs: Clock Disengaged, Halted, Feedback Overflow ON
+
+After OVRD:
+System resumes
+Feedback proceeds (computation corrupted)
+
 # OUTPUT -> After Initial ADD, Output is A + B -> 12 (0011), then we feed back the Output to A, so A->12, B->4, Thus again A + B -> 16(00001), it occupies
             5th Bit which cannot be feeded back to input, so next feedback would feed 0 to A and output would become A + B -> 4, which is wrong, so the machine
             error detection system will detect that this error will occur in next clock cycle, so it automatically disengages the clock and halt the machine
