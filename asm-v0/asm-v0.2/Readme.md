@@ -43,7 +43,7 @@
    - Divides the data in Register A from Register B.
 
 - Mnemonic 6: MUL-XXXX
-  - Multiplies the data in register B from selected ( Multiplier(XXXX) - 1 ), XXXX -> 1, 2, 4, 8, thus 0010 corresponds to multiplier (4 - 1) -> 3.
+  - Multiplies the data in register B from ( Multiplier(XXXX) - 1 ), XXXX -> 1, 2, 4, 8, thus 0010 corresponds to multiplier (4 - 1) = 3.
  
 - Mnemonic 7: OVRD
    - Overrides the system halt due to overflow errors.
@@ -63,3 +63,4 @@
 - Easier reasoning about logic and data-flow
 - Less manual error when encoding binary instructions
 - Acts as a bridge between human logic and hardware signal execution.
+
