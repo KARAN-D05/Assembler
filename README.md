@@ -13,7 +13,7 @@
 👉 [Refer Sample Programs](asm-v0/Sample-Programs)
 
 ## ⚙️ Implementation Stack
-![Python](https://img.shields.io/badge/Python-00B0FF?style=for-the-badge&logo=python&logocolor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logocolor=white)
 ![Custom Assembly](https://img.shields.io/badge/Custom%20Assembly-D50000?style=for-the-badge&logo=assemblyscript&logocolor=white)
 
 ## 🧱 Versions Built
