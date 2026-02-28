@@ -10,7 +10,7 @@
   <sub><b> 🧾 Custom Assembly Language Instructions - asm-v0 </b></sub>
 </p>
 
-👉 [Refer Sample Programs](asmv0/Sample-Programs)
+👉 [Refer Sample Programs](asm-v0/Sample-Programs)
 
 ## ⚙️ Implementation Stack
 ![Python](https://img.shields.io/badge/Python-00B0FF?style=for-the-badge)
