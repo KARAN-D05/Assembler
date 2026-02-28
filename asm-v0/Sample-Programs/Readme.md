@@ -2,12 +2,6 @@
 - A set of verified assembly programs written in the custom asm-v0 assembly language, tested on [Custom hardware](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
 
 ### ▸ Assembler Compatibility
-| Standard | Supported Assembler |
-|---|---|
-| asm-v0.1 | asm-v0.1 only |
-| asm-v0.2 | asm-v0.2, asm-v0.3 |
-| asm-v0.3 | asm-v0.2, asm-v0.3 |
-
 | Assembly Standard | Compatible Assembler |
 |---|---|
 | asm-v0.1 | asm-v0.1 assembler only |
