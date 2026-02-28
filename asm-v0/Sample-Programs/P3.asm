@@ -78,7 +78,9 @@ the number of quotient clock cycles to allow
 full convergence and stable output.
 
 After HOLD duration expires:
-System automatically returns to Default Operation (ADD).
+System automatically returns to Default Operation (ADD)
+but Division Output stays as they are outputted on seperate 
+output lines.
 
 ----------------------------------------------------
 Final System State
