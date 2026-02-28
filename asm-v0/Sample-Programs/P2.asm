@@ -15,4 +15,4 @@ FBK         // Feedback output back to input (Register A)
 SUB         // Subtract Data in Register A and B
 HOLD-OP     // Hold operation/output for arbitrary number of clock cycles then back to Default ADD operation
 
-// OUTPUT -> 0110(6) for FBK(A)-B, on output lines for HOLD-OP number of cycles, after that back to Default ADD operation as 01101(22).
+# OUTPUT -> 0110(6) for FBK(A)-B, on output lines for HOLD-OP number of cycles, after that back to Default ADD operation as 01101(22).
