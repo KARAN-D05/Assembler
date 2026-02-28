@@ -8,7 +8,7 @@
 | asm-v0.2 | asm-v0.2, asm-v0.3 |
 | asm-v0.3 | asm-v0.2, asm-v0.3 |
 
-` It is advised to use asm-v0.3 — includes syntax analysis, semantic analysis and execution report.`
+**` It is advised to use asm-v0.3 assembler - includes syntax analysis, semantic analysis and execution report.`**
 
 ### ▸ Programs
 | # | Program | Demonstrates |
