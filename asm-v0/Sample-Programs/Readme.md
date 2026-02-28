@@ -8,6 +8,11 @@
 | asm-v0.2 | asm-v0.2, asm-v0.3 |
 | asm-v0.3 | asm-v0.2, asm-v0.3 |
 
+| Assembly Standard | Compatible Assembler |
+|---|---|
+| asm-v0.1 | asm-v0.1 assembler only |
+| asm-v0.2 / asm-v0.3 | asm-v0.2 or asm-v0.3 assembler |
+
 **` It is advised to use asm-v0.3 assembler - includes syntax analysis, semantic analysis and execution report.`**
 
 ### ▸ Programs
