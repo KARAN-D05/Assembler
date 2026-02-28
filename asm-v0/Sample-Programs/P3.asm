@@ -90,7 +90,9 @@ Register A = 0111 (14)
 Register B = 0100 (2)
 Output     = 1110 (7)
 
-Divisibility Convergence LED = ON
+Divisibility Convergence LED → ON
+Indicates quotient stabilization and
+completion of division cycle.
 System Stable.
 Clock continues normally.
 --------------------------------------------------
