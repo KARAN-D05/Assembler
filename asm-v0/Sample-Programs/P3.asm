@@ -14,4 +14,4 @@ DIV         // Divide the Data in Register A from Data in Register B
 HOLD-OP     // Hold operation/output for arbitrary number of clock cycles then back to Default ADD operation
             // HOLD-OP should be sustained for atleast the value of quotient clock cycles for result to appear on Output lines
 
-// Output -> Divisibility Convergance LED will turn ON once the Machine have settled in a stable state indicating successful computation -> 7 (1110)
+# OUTPUT -> Divisibility Convergance LED will turn ON once the Machine have settled in a stable state indicating successful computation -> 7 (1110)
