@@ -29,7 +29,8 @@ if instruction2 != " ":
         print(f"00{ins1}{ins2[0]}00{ins2[1]}000{ins2[2]}{ins2[3]}0000")
         print(f"01{ins1}0000000000000")
     elif instruction2 == "FBK": # FEEDBACK
-        print("1000000000000000")
+        a = "1000000000000000"
+        print(a)
     elif instruction2 == "ADD": # ADDITION
         a = "DEFAULT ARITHMETIC OPERATION"
         print(a)
@@ -56,7 +57,8 @@ if instruction3 != " ":
         print(f"00{ins4}{ins5[0]}00{ins5[1]}000{ins5[2]}{ins5[3]}0000")
         print(f"01{ins4}0000000000000")
     elif instruction3 == "FBK":
-        print("1000000000000000")
+        b = "1000000000000000"
+        print(b)
     elif instruction3 == "ADD":
         b = "DEFAULT ARITHMETIC OPERATION"
         print(b)
@@ -86,7 +88,8 @@ if instruction4 != " ":
         print(f"00{ins7}{ins8[0]}00{ins8[1]}000{ins8[2]}{ins8[3]}0000")
         print(f"01{ins7}0000000000000")
     elif instruction4 == "FBK":
-        print("1000000000000000")
+        c = "1000000000000000"
+        print(c)
     elif instruction4 == "ADD":
         c = "DEFAULT ARITHMETIC OPERATION"
         print(c)
@@ -117,7 +120,8 @@ if instruction5 != " ":
         print(f"00{ins10}{ins11[0]}00{ins11[1]}000{ins11[2]}{ins11[3]}0000")
         print(f"01{ins10}0000000000000")
     elif instruction5 == "FBK":
-        print("1000000000000000")
+        d = "1000000000000000"
+        print(d)
     elif instruction5 == "ADD":
         d = "DEFAULT ARITHMETIC OPERATION"
         print(d)
@@ -148,7 +152,8 @@ if instruction6 != " ":
         print(f"00{ins13}{ins14[0]}00{ins14[1]}000{ins14[2]}{ins14[3]}0000")
         print(f"01{ins13}0000000000000")
     elif instruction6 == "FBK":
-        print("1000000000000000")
+        e = "1000000000000000"
+        print(e)
     elif instruction6 == "ADD":
         e = "DEFAULT ARITHMETIC OPERATION"
         print(e)
@@ -179,7 +184,8 @@ if instruction7 != " ":
         print(f"00{ins16}{ins17[0]}00{ins17[1]}000{ins17[2]}{ins17[3]}0000")
         print(f"01{ins16}0000000000000")
     elif instruction7 == "FBK":
-        print("1000000000000000")
+        f = "1000000000000000"
+        print(f)
     elif instruction7 == "ADD":
         f = "DEFAULT ARITHMETIC OPERATION"
         print(f)
@@ -210,7 +216,8 @@ if instruction8 != " ":
         print(f"00{ins19}{ins20[0]}00{ins20[1]}000{ins20[2]}{ins20[3]}0000")
         print(f"01{ins19}0000000000000")
     elif instruction8 == "FBK":
-        print("1000000000000000")
+        f = "1000000000000000"
+        print(f)
     elif instruction8 == "ADD":
         g = "DEFAULT ARITHMETIC OPERATION"
         print(g)
@@ -235,5 +242,4 @@ if instruction8 != " ":
             print(f)    
             
 # EXTENDABLE TO AS MANY INSTRUCTIONS ONE WANTS TO HAVE FOR PROGRAMMING THE MACHINE
-
 
