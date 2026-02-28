@@ -10,7 +10,7 @@
 **` It is advised to use asm-v0.3 assembler - includes syntax analysis, semantic analysis and execution report.`**
 
 ### ▸ Programs
-| # | Program | Demonstrates |
+| S.No. | Program | Demonstrates |
 |---|---|---|
 | 1 | Basic Load & ADD | LOAD, STORE, ADD |
 | 2 | Feedback | FBK, SUB, HOLD-OP |
