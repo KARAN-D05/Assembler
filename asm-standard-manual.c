@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-// ─────────────────────────────────────────
-// VERSION MANUALS
-// ─────────────────────────────────────────
-
 void manual_v01() {
     printf("\n");
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║           asm-v0.1 - Data Load & Store               ║\n");
-    printf("╚══════════════════════════════════════════════════════╝\n");
+    printf("+------------------------------------------------------+\n");
+    printf("|          asm-v0.1 - Data Load & Store                |\n");
+    printf("+------------------------------------------------------+\n");
 
     printf("\n OVERVIEW\n");
-    printf(" ─────────\n");
+    printf(" --------\n");
     printf(" Mapped machine code instructions for loading data onto\n");
     printf(" lines and storing it to registers using mnemonics.\n");
     printf(" Built a simple program where you can enter assembly\n");
@@ -22,24 +18,24 @@ void manual_v01() {
     printf(" code translation.\n");
 
     printf("\n MNEMONICS\n");
-    printf(" ──────────\n");
+    printf(" ---------\n");
 
     printf("\n [1] LOAD-S-XXXX\n");
     printf("     Function : Loads data onto the data lines.\n");
     printf("     S        : Selector pin to choose register.\n");
-    printf("                S=0 → Register A\n");
-    printf("                S=1 → Register B\n");
+    printf("                S=0 -> Register A\n");
+    printf("                S=1 -> Register B\n");
     printf("     XXXX     : 4 binary bits corresponding to\n");
     printf("                weights 1, 2, 4, 8 respectively.\n");
-    printf("                Example: 0011 → 8+4 = 12\n");
+    printf("                Example: 0011 -> 8+4 = 12\n");
 
     printf("\n     Bit Indexing Convention (asm-v0):\n");
     printf("       Bit 0 = MSB (weight 8)\n");
     printf("       Bit 3 = LSB (weight 1)\n");
 
     printf("\n     Instruction Data Field Layout:\n");
-    printf("       Index  → [3] [2] [1] [0]\n");
-    printf("       Weight →  1   2   4   8\n");
+    printf("       Index  -> [3] [2] [1] [0]\n");
+    printf("       Weight ->  1   2   4   8\n");
 
     printf("\n     Note: Enter instruction with hyphens as shown.\n");
 
@@ -51,19 +47,17 @@ void manual_v01() {
     printf("                Value from LOAD is retained and\n");
     printf("                inserted into correct bit location.\n");
 
-    printf("\n══════════════════════════════════════════════════════\n");
+    printf("\n+------------------------------------------------------+\n");
 }
-
-// ─────────────────────────────────────────
 
 void manual_v02() {
     printf("\n");
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║       asm-v0.2 - Full Machine Code Mapping           ║\n");
-    printf("╚══════════════════════════════════════════════════════╝\n");
+    printf("+------------------------------------------------------+\n");
+    printf("|      asm-v0.2 - Full Machine Code Mapping            |\n");
+    printf("+------------------------------------------------------+\n");
 
     printf("\n OVERVIEW\n");
-    printf(" ─────────\n");
+    printf(" --------\n");
     printf(" All machine code instructions are now mapped to their\n");
     printf(" Assembly Language mnemonics.\n");
     printf(" Temporal Control Added: arithmetic operations can be\n");
@@ -73,19 +67,19 @@ void manual_v02() {
     printf(" Full control of machine behavior using mnemonics.\n");
 
     printf("\n MNEMONICS\n");
-    printf(" ──────────\n");
+    printf(" ---------\n");
 
     printf("\n [1] LOAD-S-XXXX\n");
     printf("     Function : Loads AND stores data (combined).\n");
     printf("                No separate STORE needed in v0.2.\n");
     printf("     S        : Selector\n");
-    printf("                0 → Register A\n");
-    printf("                1 → Register B\n");
+    printf("                0 -> Register A\n");
+    printf("                1 -> Register B\n");
     printf("     XXXX     : Data bits, weights 1,2,4,8 respectively.\n");
     printf("     Convention: Bit 0 = MSB (weight 8)\n");
     printf("                 Bit 3 = LSB (weight 1)\n");
-    printf("     Layout:   Index  → [3][2][1][0]\n");
-    printf("               Weight →  1  2  4  8\n");
+    printf("     Layout  :  Index  -> [3][2][1][0]\n");
+    printf("                Weight ->  1  2  4  8\n");
 
     printf("\n [2] FBK\n");
     printf("     Function : Feeds output back into Register A,\n");
@@ -104,8 +98,8 @@ void manual_v02() {
 
     printf("\n [6] MUL-XXXX\n");
     printf("     Function : Multiplies Register B by (XXXX value - 1).\n");
-    printf("     XXXX     : Binary bits → weights 1,2,4,8.\n");
-    printf("     Example  : 0010 → value=4, multiplier=(4-1)=3\n");
+    printf("     XXXX     : Binary bits -> weights 1,2,4,8.\n");
+    printf("     Example  : 0010 -> value=4, multiplier=(4-1)=3\n");
 
     printf("\n [7] OVRD\n");
     printf("     Function : Overrides system halt caused by\n");
@@ -123,22 +117,20 @@ void manual_v02() {
     printf("                SUB/DIV/MUL the result must be held\n");
     printf("                before ADD takes over again.\n");
     printf("     Usage    : Prompts for number of clock cycles.\n");
-    printf("     Rule     : For MUL → hold for (multiplier+1) cycles\n");
-    printf("                For DIV → hold for (quotient) cycles\n");
+    printf("     Rule     : For MUL -> hold for (multiplier+1) cycles\n");
+    printf("                For DIV -> hold for (quotient) cycles\n");
 
-    printf("\n══════════════════════════════════════════════════════\n");
+    printf("\n+------------------------------------------------------+\n");
 }
-
-// ─────────────────────────────────────────
 
 void manual_v03() {
     printf("\n");
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║     asm-v0.3 - Syntax & Primitive Semantic Analysis  ║\n");
-    printf("╚══════════════════════════════════════════════════════╝\n");
+    printf("+------------------------------------------------------+\n");
+    printf("|   asm-v0.3 - Syntax & Primitive Semantic Analysis    |\n");
+    printf("+------------------------------------------------------+\n");
 
     printf("\n OVERVIEW\n");
-    printf(" ─────────\n");
+    printf(" --------\n");
     printf(" The assembler evolves from a simple instruction-to-\n");
     printf(" machine-code translator into an early-stage compiler\n");
     printf(" system capable of performing syntax validation and\n");
@@ -148,7 +140,7 @@ void manual_v03() {
     printf(" order (basic semantic checks).\n");
 
     printf("\n KEY FEATURES\n");
-    printf(" ─────────────\n");
+    printf(" ------------\n");
 
     printf("\n [1] SYNTAX ANALYSIS\n");
     printf("     - Each instruction validated before translation.\n");
@@ -168,11 +160,11 @@ void manual_v03() {
     printf("\n [3] ENHANCED ERROR REPORTING\n");
     printf("     - Distinct syntax and semantic error messages.\n");
     printf("     - Clear differentiation between:\n");
-    printf("       * Invalid syntax  (wrong format/structure)\n");
+    printf("       * Invalid syntax   (wrong format/structure)\n");
     printf("       * Invalid semantics (wrong order/context)\n");
 
     printf("\n ERROR TYPES DETECTED\n");
-    printf(" ────────────────────\n");
+    printf(" -------------------\n");
     printf("     * No input detected\n");
     printf("     * Instruction out of order\n");
     printf("     * Malformed mnemonic\n");
@@ -180,43 +172,35 @@ void manual_v03() {
     printf("     * Operation before data load\n");
 
     printf("\n INSTRUCTION EXECUTION REPORT\n");
-    printf(" ─────────────────────────────\n");
+    printf(" ----------------------------\n");
     printf("     After running a program, v0.3 generates a full\n");
     printf("     execution report showing each instruction, its\n");
     printf("     result, and any errors encountered.\n");
 
-    printf("\n══════════════════════════════════════════════════════\n");
+    printf("\n+------------------------------------------------------+\n");
 }
-
-// ─────────────────────────────────────────
-// ALL VERSIONS SUMMARY
-// ─────────────────────────────────────────
 
 void manual_all() {
     printf("\n");
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║            ASM Manual - All Versions                 ║\n");
-    printf("╚══════════════════════════════════════════════════════╝\n");
-    printf("\n  v0.1 → Data Load & Store Mnemonics Mapped\n");
-    printf("  v0.2 → Full Machine Code & Mnemonic Mapping\n");
-    printf("  v0.3 → Syntax & Primitive Semantic Analysis\n");
+    printf("+------------------------------------------------------+\n");
+    printf("|             ASM Manual - All Versions                |\n");
+    printf("+------------------------------------------------------+\n");
+    printf("\n  v0.1 -> Data Load & Store Mnemonics Mapped\n");
+    printf("  v0.2 -> Full Machine Code & Mnemonic Mapping\n");
+    printf("  v0.3 -> Syntax & Primitive Semantic Analysis\n");
     printf("\n Showing all versions...\n");
     manual_v01();
     manual_v02();
     manual_v03();
 }
 
-// ─────────────────────────────────────────
-// MAIN
-// ─────────────────────────────────────────
-
 int main() {
     char input[20];
 
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║             ASM Language Manual                      ║\n");
-    printf("║         Custom Hardware Assembler Docs               ║\n");
-    printf("╚══════════════════════════════════════════════════════╝\n");
+    printf("+------------------------------------------------------+\n");
+    printf("|              ASM Language Manual                     |\n");
+    printf("|          Custom Hardware Assembler Docs              |\n");
+    printf("+------------------------------------------------------+\n");
 
     while (1) {
         printf("\n Available versions: v0.1 | v0.2 | v0.3 | all\n");
