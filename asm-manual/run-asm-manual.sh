@@ -1,51 +1,5 @@
 #!/bin/bash
 
-# ============================================================
-#  run-asm-manual.sh
-# ------------------------------------------------------------
-#  This script downloads, compiles and runs asm-manual.c
-#  directly from GitHub. No manual steps needed.
-#
-# ------------------------------------------------------------
-#  HOW TO RUN THIS SCRIPT
-# ------------------------------------------------------------
-#
-#  STEP 1 - Download this script:
-#
-#    curl -O https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.sh
-#
-#  STEP 2 - Give it permission to execute:
-#
-#    chmod +x run-asm-manual.sh
-#
-#  STEP 3 - Run it:
-#
-#    ./run-asm-manual.sh
-#
-# ------------------------------------------------------------
-#  REQUIREMENTS
-# ------------------------------------------------------------
-#
-#  - GCC must be installed.
-#
-#  Check if you have it:
-#    gcc --version
-#
-#  If not installed:
-#    Ubuntu/Debian -> sudo apt install gcc
-#    Mac           -> xcode-select --install
-#
-# ------------------------------------------------------------
-#  AFTER FIRST RUN
-# ------------------------------------------------------------
-#
-#  Once compiled you do not need this script again.
-#  Just run the binary directly:
-#
-#    ./asm-manual
-#
-# ============================================================
-
 echo "+--------------------------------------------------+"
 echo "|           asm-manual - Bash Installer            |"
 echo "+--------------------------------------------------+"
