@@ -49,6 +49,23 @@
 ## 🚀 Future Development 
 - Advanced Semantic Analysis for the assembly language, enabling validation and structured interpretation of programs before translation to machine code.
 - Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code - `MACROS`
+
+## 🛠️ Toolchain
+
+This project includes a built-in reference manual for the custom ASM language that can be queried directly from your terminal. View full manual: [asm-manual](https://github.com/KARAN-D05/Assembler/tree/main/asm-manual)
+
+**Linux / Mac:**
+```bash
+curl -O https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.sh
+chmod +x run-asm-manual.sh
+./run-asm-manual.sh
+```
+
+**Windows:**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.ps1" -OutFile "run-asm-manual.ps1"
+powershell -ExecutionPolicy Bypass -File run-asm-manual.ps1
+```
   
 ## 🧰 Computing Machinery from Scratch
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
