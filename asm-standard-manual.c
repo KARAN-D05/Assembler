@@ -1,26 +1,24 @@
 // ============================================================
 //  asm-manual.c
 // ------------------------------------------------------------
-//  This file exists because the custom ASM language built
-//  for the custom hardware project has its own syntax, conventions,
-//  and machine code mapping that is not standard or intuitive
-//  to anyone reading it for the first time.
+//  When you build your own hardware, you build your own rules.
+//  This machine does not follow any existing assembly standard
+//  so there is no textbook to refer to, no online resource
+//  to look up. The only reference is what was designed here.
 //
-//  Instead of always referring to external documentation,
-//  this manual is built directly into the toolchain so that
-//  anyone working with this assembler can query the language
-//  standard on the fly without leaving their terminal.
+//  This program is that reference. A manual baked directly
+//  into the toolchain so the language standard is always
+//  one command away, no browser, no file explorer, just run
+//  it and get your answer.
 //
-//  Think of it as a built-in reference card for the ISA
-//  (Instruction Set Architecture) of this custom machine.
-//
-//  As the ASM standard evolves (v0.1 -> v0.2 -> v0.3 ...),
-//  this manual grows with it, keeping all documentation
-//  in one place and always in sync with the actual hardware
-//  behaviour.
-//
-//  Author : Karan Diwan
-//  Date   : 1.03.26
+//  Every time the hardware evolves, the language evolves.
+//  Every time the language evolves, this manual evolves.
+// ------------------------------------------------------------
+//  Project  : Custom Hardware Assembler
+//  File     : asm-manual.c
+//  Covers   : asm-v0.1, asm-v0.2, asm-v0.3
+//  Author   : Karan Diwan
+//  Date     : 1.03.26
 // ============================================================
 
 #include <stdio.h>
