@@ -4,10 +4,11 @@
 - So next logical step was to go up the computing stack from machine code to language having instructions in an english like language, called Mnemonics, so after mapping all the machine codes to
  mnemonics we get -**The Assembly Language**.
 
+## 🧾 Custom Assembly Language Instructions - asm-v0
 <p align="center">
   <img src="asm-v0/Mnemonics.png" width="1500"/>
   <br>
-  <sub><b> 🧾 Custom Assembly Language Instructions - asm-v0 </b></sub>
+  <sub><b> </b></sub>
 </p>
 
 👉 [Refer Sample Programs](asm-v0/Sample-Programs)
