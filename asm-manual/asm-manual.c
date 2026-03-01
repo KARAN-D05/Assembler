@@ -17,7 +17,7 @@
 //  Project  : Assembler for Custom Computing Machine
 //  File     : asm-manual.c
 //  Covers   : asm-v0.1, asm-v0.2, asm-v0.3
-//  Author   : KARAN-D05
+//  Author   : Karan Diwan
 //  Date     : 2026
 // ============================================================
 
