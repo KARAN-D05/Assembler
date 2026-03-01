@@ -24,23 +24,36 @@ chmod +x run-asm-manual.sh
 ./run-asm-manual.sh
 ```
 
-The script will download `asm-manual.c`, compile it and launch it automatically.
+---
+
+## Run on Windows (PowerShell)
+
+**Step 1 - Download the script**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.ps1" -OutFile "run-asm-manual.ps1"
+```
+
+**Step 2 - Run it**
+```powershell
+powershell -ExecutionPolicy Bypass -File run-asm-manual.ps1
+```
 
 ---
 
 ## Requirements
 
 GCC must be installed. Check if you have it:
-```bash
+```
 gcc --version
 ```
 
 If not installed:
 
-| OS            | Command                       |
-|---------------|-------------------------------|
-| Ubuntu/Debian | `sudo apt install gcc`        |
-| Mac           | `xcode-select --install`      |
+| OS            | Command / Link                              |
+|---------------|---------------------------------------------|
+| Ubuntu/Debian | `sudo apt install gcc`                      |
+| Mac           | `xcode-select --install`                    |
+| Windows       | https://www.mingw-w64.org then add `C:\MinGW\bin` to PATH |
 
 ---
 
@@ -48,8 +61,15 @@ If not installed:
 
 Once compiled you do not need the script again.
 Just run the binary directly:
+
+**Linux / Mac:**
 ```bash
 ./asm-manual
+```
+
+**Windows:**
+```powershell
+.\asm-manual.exe
 ```
 
 ---
@@ -64,17 +84,23 @@ Once the program is running, type the ASM version you want:
 | v0.2    | Full Machine Code & Mnemonic Mapping |
 | v0.3    | Syntax & Semantic Analysis           |
 | all     | Show all versions at once            |
+| search  | Search for a specific mnemonic       |
 | exit    | Quit the program                     |
+
+You can also search directly from the terminal:
+```bash
+./asm-manual --search LOAD
+./asm-manual --search SUB
+```
 
 ---
 
 ## Files
 
-| File                 | Description                        |
-|----------------------|------------------------------------|
-| `asm-manual.c`       | Source code of the manual          |
-| `run-asm-manual.sh`  | Bash script — download and run     |
+| File                  | Description                        |
+|-----------------------|------------------------------------|
+| `asm-manual.c`        | Source code of the manual          |
+| `run-asm-manual.sh`   | Bash script for Linux / Mac        |
+| `run-asm-manual.ps1`  | PowerShell script for Windows      |
 
 ---
-
-*Part of the Custom Hardware Assembler project by KARAN-D05*
