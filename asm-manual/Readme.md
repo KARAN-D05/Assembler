@@ -104,3 +104,5 @@ You can also search directly from the terminal:
 | `run-asm-manual.ps1`  | PowerShell script for Windows      |
 
 ---
+
+*Part of the Assembler project by KARAN-D05*
