@@ -66,7 +66,21 @@ chmod +x run-asm-manual.sh
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.ps1" -OutFile "run-asm-manual.ps1"
 powershell -ExecutionPolicy Bypass -File run-asm-manual.ps1
 ```
-  
+
+Full computing stack manual covering both the RAM hardware and this Assembly Language. One command for the complete reference: 
+View full manual: [stack-manual](https://github.com/KARAN-D05/Assembler/tree/main/stack-manual)
+
+**Linux / Mac:**
+```bash
+curl -O https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/run-stack-manual.sh
+chmod +x run-stack-manual.sh
+./run-stack-manual.sh
+```
+**Windows:**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/run-stack-manual.ps1" -OutFile "run-stack-manual.ps1"
+powershell -ExecutionPolicy Bypass -File run-stack-manual.ps1
+```
 ## 🧰 Computing Machinery from Scratch
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
 - [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
