@@ -1,3 +1,2 @@
 # Manual files are documentation not source code
 asm-manual.c linguist-documentation=true
-stack-manual.c linguist-documentation=true
