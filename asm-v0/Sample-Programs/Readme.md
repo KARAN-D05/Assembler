@@ -1,5 +1,5 @@
 ## 📁 Sample Programs - asm-v0
-- A set of verified assembly programs written in the custom asm-v0 assembly language, tested on [Custom Computing Machine](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
+- A set of verified assembly programs written in the custom asm-v0 assembly language, tested on [Custom Computing Machine](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch).
 
 ### ▸ Assembler Compatibility
 | Assembly Standard | Compatible Assembler |
