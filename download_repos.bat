@@ -12,9 +12,9 @@ set "BRANCH=main"
 
 :MENU
 cls
-echo ============================================
+echo ===========================================
 echo   KARAN-D05  ^|  Repository Downloader
-echo ============================================
+echo ===========================================
 echo.
 echo   1.  Computing_Machinery_from_Scratch
 echo   2.  Assembler
