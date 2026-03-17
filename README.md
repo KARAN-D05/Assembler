@@ -85,6 +85,26 @@ powershell -ExecutionPolicy Bypass -File run-stack-manual.ps1
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
 - [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
 
+## ⬇️ Download This Repository
+
+### 🪟 Windows
+Download → [download_repos.bat](./download_repos.bat)
+``` 
+Double-click it and pick the repo(s) you want.
+```
+
+### 🐧 Linux / macOS
+Download → [download_repos.sh](./download_repos.sh)
+```
+bash
+
+chmod +x download_repos.sh
+./download_repos.sh
+```
+
+> Always downloads the latest version.
+
+
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
