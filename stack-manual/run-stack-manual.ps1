@@ -2,10 +2,10 @@
 #  run-stack-manual.ps1
 #  Full Computing Stack Manual launcher
 #  Covers: RAM Hardware (V0-V4) + Assembly Language (v0.1-v0.3)
-#  Repo: Computing_Machinery_from_Scratch
+#  Repo: Assembler
 # ============================================================
 
-$ManualUrl = "https://raw.githubusercontent.com/KARAN-D05/Computing_Machinery_from_Scratch/main/stack-manual/stack-manual.c"
+$ManualUrl = "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/stack-manual.c"
 $Source    = "stack-manual.c"
 $Binary    = ".\stack-manual.exe"
 
@@ -20,7 +20,7 @@ if (-Not (Test-Path $Binary)) {
 Write-Host "Downloading stack-manual.bat from GitHub..."
 try {
     Invoke-WebRequest `
-        -Uri "https://raw.githubusercontent.com/KARAN-D05/Computing_Machinery_from_Scratch/main/stack-manual/stack-manual.bat" `
+        -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/stack-manual.bat" `
         -OutFile "stack-manual.bat" `
         -ErrorAction Stop
     Write-Host "[OK] Batch file download complete."
