@@ -29,11 +29,11 @@ try {
 }
 
 Write-Host ""
-Write-Host "Downloading ram-manual.bat from GitHub..."
+Write-Host "Downloading asm-manual.bat from GitHub..."
 try {
     Invoke-WebRequest `
-        -Uri "https://raw.githubusercontent.com/KARAN-D05/Computing_Machinery_from_Scratch/main/ram-manual/ram-manual.bat" `
-        -OutFile "ram-manual.bat" `
+        -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/asm-manual.bat" `
+        -OutFile "asm-manual.bat" `
         -ErrorAction Stop
     Write-Host "[OK] Batch file download complete."
 } catch {
