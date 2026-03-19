@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ─────────────────────────────────────────
-#  KARAN-D05 | Repository Downloader
-#  Works on macOS and Linux
-# ─────────────────────────────────────────
+
 BASE_URL="https://github.com/KARAN-D05"
 RAW_URL="https://raw.githubusercontent.com/KARAN-D05"
 BRANCH="main"
@@ -101,7 +98,9 @@ while true; do
         fi
     done
 
-    download_utils
+    if [ "$DOWNLOADED" -gt 0 ]; then
+        download_utils
+    fi
 
     echo ""
     echo -e "${BOLD}============================================${RESET}"
