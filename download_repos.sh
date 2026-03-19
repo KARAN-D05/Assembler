@@ -12,7 +12,8 @@ REPOS=(
     "Assembler"
     "Gate-Level-Perceptron"
     "8-Bit-Computer"
-    "Artificial-Neuron"
+    "Artificial-Neuron",
+    "portmap-HDL"
 )
 
 RED='\033[0;31m'; GREEN='\033[0;32m'
@@ -73,14 +74,14 @@ while true; do
     fi
 
     if [[ "${INPUT,,}" == "a" ]]; then
-        INPUT="1 2 3 4 5"
+        INPUT="1 2 3 4 5 6"
     fi
 
     DOWNLOADED=0
     FAILED=0
 
     for TOKEN in $INPUT; do
-        if ! [[ "$TOKEN" =~ ^[1-5]$ ]]; then
+        if ! [[ "$TOKEN" =~ ^[1-6]$ ]]; then
             echo -e "\n${RED}  \"${TOKEN}\" is not a valid option -- skipping.${RESET}"
             continue
         fi
