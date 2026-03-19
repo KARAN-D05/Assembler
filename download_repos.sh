@@ -46,24 +46,14 @@ download_zip() {
 }
 
 download_utils() {
-    echo -e "\n${CYAN}  Downloading utils (filetree.lua + README) ...${RESET}"
+    echo -e "\n${CYAN}  Fetching utils ...${RESET}"
     mkdir -p utils
-    local ok=0
     if [ "$DOWNLOADER" = "curl" ]; then
         curl -L -o "utils/filetree.lua" "${RAW_URL}/portmap-HDL/${BRANCH}/utils/filetree.lua" --silent && \
         curl -L -o "utils/README.md"    "${RAW_URL}/portmap-HDL/${BRANCH}/utils/README.md"    --silent
-        ok=$?
     else
         wget -O "utils/filetree.lua" "${RAW_URL}/portmap-HDL/${BRANCH}/utils/filetree.lua" -q && \
         wget -O "utils/README.md"    "${RAW_URL}/portmap-HDL/${BRANCH}/utils/README.md"    -q
-        ok=$?
-    fi
-    if [ $ok -eq 0 ]; then
-        echo -e "${GREEN}  Done. Saved to utils/${RESET}"
-        return 0
-    else
-        echo -e "${RED}  Failed to download utils. Check your connection.${RESET}"
-        return 1
     fi
 }
 
@@ -76,8 +66,7 @@ while true; do
     for i in "${!REPOS[@]}"; do
         echo "  $((i+1)).  ${REPOS[$i]}"
     done
-    echo "  7.  Utils  (filetree.lua + README)"
-    echo "  A.  Download ALL repos + utils"
+    echo "  A.  Download ALL repos"
     echo "  Q.  Quit"
     echo ""
     echo "  Enter one number, several (e.g. 1 3 5),"
@@ -92,21 +81,13 @@ while true; do
     fi
 
     if [[ "${INPUT,,}" == "a" ]]; then
-        INPUT="1 2 3 4 5 6 7"
+        INPUT="1 2 3 4 5 6"
     fi
 
     DOWNLOADED=0
     FAILED=0
 
     for TOKEN in $INPUT; do
-        if [[ "$TOKEN" == "7" ]]; then
-            if download_utils; then
-                ((DOWNLOADED++))
-            else
-                ((FAILED++))
-            fi
-            continue
-        fi
         if ! [[ "$TOKEN" =~ ^[1-6]$ ]]; then
             echo -e "\n${RED}  \"${TOKEN}\" is not a valid option -- skipping.${RESET}"
             continue
@@ -119,6 +100,8 @@ while true; do
             ((FAILED++))
         fi
     done
+
+    download_utils
 
     echo ""
     echo -e "${BOLD}============================================${RESET}"
