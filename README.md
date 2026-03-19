@@ -104,6 +104,10 @@ chmod +x download_repos.sh
 
 > Always downloads the latest version.
 
+## 🧰 Utils
+- [filetree.lua](https://github.com/KARAN-D05/portmap-HDL/tree/main/utils) - A repository file tree generator that prints a visual directory tree with file-type icons and a file count breakdown by extension (`.v`, `.circ`, `.md`, `.py` and more).
+- Works on Linux and Windows. Included automatically when downloading repos via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).
+
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
