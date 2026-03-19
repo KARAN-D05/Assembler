@@ -48,7 +48,7 @@ set "FAILED=0"
 
 for %%T in (%CHOICE%) do (
     set "VALID=0"
-    for /L %%I in (1,1,5) do (
+    for /L %%I in (1,1,6) do (
         if "%%T"=="%%I" set "VALID=1"
     )
     if "!VALID!"=="0" (
