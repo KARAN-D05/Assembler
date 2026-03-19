@@ -73,11 +73,13 @@ for %%T in (%CHOICE%) do (
     )
 )
 
-echo.
-echo  Fetching utils ...
-if not exist "utils" mkdir utils
-curl -L -o "utils\filetree.lua" "%RAW_URL%/portmap-HDL/%BRANCH%/utils/filetree.lua" --silent
-curl -L -o "utils\README.md"    "%RAW_URL%/portmap-HDL/%BRANCH%/utils/README.md"    --silent
+if %DOWNLOADED% GTR 0 (
+    echo.
+    echo  Fetching utils ...
+    if not exist "utils" mkdir utils
+    curl -L -o "utils\filetree.lua" "%RAW_URL%/portmap-HDL/%BRANCH%/utils/filetree.lua" --silent
+    curl -L -o "utils\README.md"    "%RAW_URL%/portmap-HDL/%BRANCH%/utils/README.md"    --silent
+)
 
 echo.
 echo ============================================
