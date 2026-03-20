@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Linux/macos Repository Downloader
+# Linux/macOS Repository Downloader
 
 BASE_URL="https://github.com/KARAN-D05"
 RAW_URL="https://raw.githubusercontent.com/KARAN-D05"
@@ -48,12 +48,24 @@ download_utils() {
     echo -e "\n${CYAN}  Fetching utils ...${RESET}"
     mkdir -p utils
     if [ "$DOWNLOADER" = "curl" ]; then
-        curl -L -o "utils/filetree.lua" "${RAW_URL}/portmap-HDL/${BRANCH}/utils/filetree.lua" --silent && \
-        curl -L -o "utils/README.md"    "${RAW_URL}/portmap-HDL/${BRANCH}/utils/README.md"    --silent
+        curl -L -o "portmap-temp.zip" "${BASE_URL}/portmap-HDL/archive/refs/heads/${BRANCH}.zip" --silent
     else
-        wget -O "utils/filetree.lua" "${RAW_URL}/portmap-HDL/${BRANCH}/utils/filetree.lua" -q && \
-        wget -O "utils/README.md"    "${RAW_URL}/portmap-HDL/${BRANCH}/utils/README.md"    -q
+        wget -O "portmap-temp.zip" "${BASE_URL}/portmap-HDL/archive/refs/heads/${BRANCH}.zip" -q
     fi
+    python3 - <<'EOF'
+import zipfile, os, shutil
+
+with zipfile.ZipFile("portmap-temp.zip") as z:
+    for member in z.namelist():
+        if member.startswith("portmap-HDL-main/utils/") and not member.endswith("/"):
+            rel = member[len("portmap-HDL-main/utils/"):]
+            dest = os.path.join("utils", rel)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with z.open(member) as src, open(dest, "wb") as dst:
+                shutil.copyfileobj(src, dst)
+EOF
+    rm -f "portmap-temp.zip"
+    echo -e "${GREEN}  Done.${RESET}"
 }
 
 while true; do
