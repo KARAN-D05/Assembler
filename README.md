@@ -50,7 +50,30 @@
 - Advanced Semantic Analysis for the assembly language, enabling validation and structured interpretation of programs before translation to machine code.
 - Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code - `MACROS`
 
-## 🛠️ Toolchain
+## 🧰 Computing Machinery from Scratch
+- To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
+- [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
+
+## ⬇️ Download This Repository
+
+### 🪟 Windows
+Download → [download_repos.bat](./download_repos.bat)
+``` 
+Double-click it and pick the repo(s) you want.
+```
+
+### 🐧 Linux / macOS
+Download → [download_repos.sh](./download_repos.sh)
+```
+bash
+
+chmod +x download_repos.sh
+./download_repos.sh
+```
+
+> Always downloads the latest version.
+
+## 🛠️ Toolchain & Repo Utilities - Built to make navigating and interacting with this repo easier
 
 This project includes a built-in reference manual for the custom ASM language that can be queried directly from your terminal. View full manual: [asm-manual](https://github.com/KARAN-D05/Assembler/tree/main/asm-manual)
 
@@ -81,32 +104,27 @@ chmod +x run-stack-manual.sh
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/run-stack-manual.ps1" -OutFile "run-stack-manual.ps1"
 powershell -ExecutionPolicy Bypass -File run-stack-manual.ps1
 ```
-## 🧰 Computing Machinery from Scratch
-- To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
-- [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
 
-## ⬇️ Download This Repository
+### 🔧 portmap - Verilog Port Extractor
 
-### 🪟 Windows
-Download → [download_repos.bat](./download_repos.bat)
-``` 
-Double-click it and pick the repo(s) you want.
+`portmap` is a lightweight CLI tool that extracts port definitions (`input`, `output`, `inout`) from Verilog modules and presents them in a clean table or Markdown format.
+
+#### 🔗 Source
+https://github.com/KARAN-D05/portmap-HDL/blob/main/portmap.nim
+
+#### 📦 Release (Download Binary)
+https://github.com/KARAN-D05/portmap-HDL/releases/tag/v1.0.0
+
+#### 🚀 Usage
+```bash
+portmap file.v
+portmap file.v --md
 ```
 
-### 🐧 Linux / macOS
-Download → [download_repos.sh](./download_repos.sh)
-```
-bash
-
-chmod +x download_repos.sh
-./download_repos.sh
-```
-
-> Always downloads the latest version.
-
-## 🧰 Utils
-- [filetree.lua](https://github.com/KARAN-D05/portmap-HDL/tree/main/utils) - A repository file tree generator that prints a visual directory tree with file-type icons and a file count breakdown by extension (`.v`, `.circ`, `.md`, `.py` and more).
-- Works on Linux and Windows. Included automatically when downloading repos via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).
+### 🧰 Repo Filetree Generator
+[Filetree](https://github.com/KARAN-D05/portmap-HDL/tree/main/utils) - A repository file tree generator that prints a visual directory tree with file-type icons and a file count breakdown by extension (`.v`, `.circ`, `.md`, `.py` and more).
+  
+Utils (Portmap + Filtree) - Fetched automatically as a utils/ package alongside any repo download - includes portmap binaries, filetree, and source code via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).
 
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
