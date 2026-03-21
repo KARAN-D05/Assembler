@@ -124,7 +124,7 @@ portmap file.v --md
 ### 🧰 Repo Filetree Generator
 [Filetree](https://github.com/KARAN-D05/portmap-HDL/tree/main/utils) - A repository file tree generator that prints a visual directory tree with file-type icons and a file count breakdown by extension (`.v`, `.circ`, `.md`, `.py` and more).
   
-Utils (Portmap + Filetree) - Fetched automatically as a utils/ package alongside any repo download - includes portmap binaries, filetree, and source code via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).
+**Utils (Portmap + Filetree)- Fetched automatically as a utils package alongside any repo download - includes portmap binaries, filetree, and source code via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).**
 
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
