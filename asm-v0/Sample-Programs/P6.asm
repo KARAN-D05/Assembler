@@ -11,7 +11,7 @@
 
 LOAD-1-1000 // Load 1000(1) in Register A
 LOAD-0-0010 // Load 0010(4) in Register B
-ADD         // A + B
+ADD         // A + B (Default Operation)
 RSTM        // Clears the Machine
 
 ---------------------------------------------------
