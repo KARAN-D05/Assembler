@@ -24,9 +24,12 @@ FBK         // Feed output back to A
 ---------------------------------------------------
 
 Initial State:
+A = 0000 (0)
+B = 0000 (0)
+
+Register State after LOAD operations:
 A = 0001 (8)
 B = 0010 (4)
-Output = 0000 (0)
 
 ----------------------------------------------------
 1) ADD  (Default Operation)
@@ -55,10 +58,12 @@ Binary Output = 00001 (16)
 (5-bit result exceeds 4-bit register width)
 
 ----------------------------------------------------
-Overflow Detection
+4) FBK 
 ----------------------------------------------------
 
-Since the result occupies the 5th bit,
+(Overflow Detection)
+
+Since the result (00001) occupies the 5th bit,
 it cannot be stored within the 4-bit register width
 with feedback.
 
@@ -73,10 +78,10 @@ System Response:
     • System Halted
     • Feedback Overflow
 
-Architectural State Preserved.
+Previous Architectural State Preserved.
 
 ----------------------------------------------------
-4) HOLD-OP
+5) HOLD-OP
 ----------------------------------------------------
 
 Output held constant at:
@@ -85,14 +90,14 @@ Output held constant at:
 System remains halted until override.
 
 ----------------------------------------------------
-5) OVRD  (Override)
+6) OVRD  (Override)
 ----------------------------------------------------
 
 Clock Re-enabled.
 System resumes from halted state.
 
 ----------------------------------------------------
-6) FBK
+7) FBK
 ----------------------------------------------------
 
 Feedback attempts to store output into Register A.
