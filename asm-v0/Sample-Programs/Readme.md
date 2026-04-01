@@ -16,5 +16,5 @@
 | 2 | Feedback | FBK, SUB, HOLD-OP |
 | 3 | Division | DIV, HOLD-OP, Convergence |
 | 4 | Multiplication | MUL, HOLD-OP, XXXX-1 rule |
-| 5 | Overflow & Recovery | OVRD, overflow detection |
+| 5 | Overflow, fault-detection & Recovery | OVRD, overflow detection |
 | 6 | Machine Reset | RSTM |
