@@ -75,6 +75,7 @@ chmod +x download_repos.sh
 
 ## 🛠️ Toolchain & Repo Utilities - Built to make navigating and interacting with this repo easier
 
+### 💻 Terminal-Manual
 This project includes a built-in reference manual for the custom ASM language that can be queried directly from your terminal. View full manual: [asm-manual](https://github.com/KARAN-D05/Assembler/tree/main/asm-manual)
 
 **Linux / Mac:**
