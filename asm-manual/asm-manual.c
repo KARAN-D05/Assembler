@@ -350,11 +350,11 @@ void manual_v02() {
 
 void manual_v03() {
     printf("\n");
-    print_header("asm-v0.3 - Syntax & Primitive Semantic Analysis");
+    print_header("asm-v0.3 - Syntax & Semantic Analysis");
 
     print_section("OVERVIEW");
     printf(" The assembler evolves into an early-stage compiler\n");
-    printf(" capable of syntax validation and primitive semantic\n");
+    printf(" capable of syntax validation and basic semantic\n");
     printf(" checks. All mnemonics from v0.2 are supported.\n");
     printf(" Ensures every instruction follows valid structural\n");
     printf(" rules and operations occur in meaningful order.\n");
@@ -372,7 +372,7 @@ void manual_v03() {
     print_bullet("Detects non-binary selector or data bits.");
     print_bullet("Detects incorrect instruction length.");
 
-    printf("\n" BOLD_YELLOW "  [2] PRIMITIVE SEMANTIC ANALYSIS\n" RESET);
+    printf("\n" BOLD_YELLOW "  [2] BASIC SEMANTIC ANALYSIS\n" RESET);
     print_bullet("Prevents arithmetic before any LOAD.");
     print_bullet("Detects invalid machine states.");
     print_bullet("Halts with descriptive error messages.");
