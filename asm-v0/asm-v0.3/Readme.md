@@ -1,7 +1,7 @@
 # asm-v0.3 - Syntax & Semantic Analysis
 
 ## 🧩 Overview
-- In this version, the assembler evolves from a simple instruction-to-machine-code translator into an early-stage compiler system capable of performing syntax validation and primitive semantic checks.
+- In this version, the assembler evolves from a simple instruction-to-machine-code translator into an early-stage compiler system capable of performing syntax validation and basic semantic checks.
 - The assembler now ensures that every assembly instruction follows valid structural rules (syntax) and that operations occur in a meaningful order (basic semantic checks).
 
 ## ⚙️ Key Features
