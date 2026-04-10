@@ -19,7 +19,7 @@
   <sub><b>🔍 Syntax Analysis - v0.3</b></sub>
 </p>
    
-2. 🧮 Primitive Semantic Analysis
+2. 🧮 Basic Semantic Analysis
   - Checks for logical execution order (e.g. preventing arithmetic operations before any data load).
   - Detects invalid machine states (e.g. system reset or override at incorrect times).
   - Ensures the assembler halts with descriptive error messages.
