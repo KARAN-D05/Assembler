@@ -2,3 +2,5 @@ asm-manual.c linguist-documentation=true
 stack-manual.c linguist-documentation=true
 download_repos.sh linguist-documentation=true
 download_repos.bat linguist-documentation=true
+run-stack-manual.sh linguist-documentation=true
+run-stack-manual.ps1 linguist-documentation=true
