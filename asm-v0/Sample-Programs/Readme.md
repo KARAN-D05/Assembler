@@ -12,7 +12,7 @@
 ### ▸ Programs
 | S.No. | Program | Demonstrates |
 |---|---|---|
-| 1 | Basic Load & ADD | LOAD, STORE, ADD |
+| 1 | Load & ADD | LOAD, STORE, ADD |
 | 2 | Feedback | FBK, SUB, HOLD-OP |
 | 3 | Division | DIV, HOLD-OP, Convergence |
 | 4 | Multiplication | MUL, HOLD-OP, XXXX-1 rule |
