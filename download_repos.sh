@@ -11,7 +11,7 @@ REPOS=(
     "Gate-Level-Perceptron"
     "8-Bit-Computer"
     "Artificial-Neuron"
-    "portmap-HDL"
+    "TopoCore"
 )
 RED='\033[0;31m'; GREEN='\033[0;32m'
 CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
