@@ -106,27 +106,6 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/ma
 powershell -ExecutionPolicy Bypass -File run-stack-manual.ps1
 ```
 
-### 🔧 portmap - Verilog Port Extractor
-
-`portmap` is a lightweight CLI tool that extracts port definitions (`input`, `output`, `inout`) from Verilog modules and presents them in a clean table or Markdown format.
-
-#### 🔗 Source
-https://github.com/KARAN-D05/portmap-HDL/blob/main/utils/portmap
-
-#### 📦 Release (Download Binary)
-https://github.com/KARAN-D05/portmap-HDL/releases/tag/v1.0.0
-
-#### 🚀 Usage
-```bash
-portmap file.v
-portmap file.v --md
-```
-
-### 🧰 Repo Filetree Generator
-[Filetree](https://github.com/KARAN-D05/portmap-HDL/tree/main/utils) - A repository file tree generator that prints a visual directory tree with file-type icons and a file count breakdown by extension (`.v`, `.circ`, `.md`, `.py` and more).
-  
-**Utils (Portmap + Filetree)- Fetched automatically as a utils package alongside any repo download - includes portmap binaries, filetree, and source code via [download_repos.bat](download_repos.bat) / [download_repos.sh](download_repos.sh).**
-
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
