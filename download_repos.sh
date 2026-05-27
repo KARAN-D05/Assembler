@@ -44,30 +44,6 @@ download_zip() {
     fi
 }
 
-download_utils() {
-    echo -e "\n${CYAN}  Fetching utils ...${RESET}"
-    mkdir -p utils
-    if [ "$DOWNLOADER" = "curl" ]; then
-        curl -L -o "portmap-temp.zip" "${BASE_URL}/portmap-HDL/archive/refs/heads/${BRANCH}.zip" --silent
-    else
-        wget -O "portmap-temp.zip" "${BASE_URL}/portmap-HDL/archive/refs/heads/${BRANCH}.zip" -q
-    fi
-    python3 - <<'EOF'
-import zipfile, os, shutil
-
-with zipfile.ZipFile("portmap-temp.zip") as z:
-    for member in z.namelist():
-        if member.startswith("portmap-HDL-main/utils/") and not member.endswith("/"):
-            rel = member[len("portmap-HDL-main/utils/"):]
-            dest = os.path.join("utils", rel)
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
-            with z.open(member) as src, open(dest, "wb") as dst:
-                shutil.copyfileobj(src, dst)
-EOF
-    rm -f "portmap-temp.zip"
-    echo -e "${GREEN}  Done.${RESET}"
-}
-
 while true; do
     echo ""
     echo -e "${BOLD}============================================${RESET}"
@@ -111,10 +87,6 @@ while true; do
             ((FAILED++))
         fi
     done
-
-    if [ "$DOWNLOADED" -gt 0 ]; then
-        download_utils
-    fi
 
     echo ""
     echo -e "${BOLD}============================================${RESET}"
