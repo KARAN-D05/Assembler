@@ -6,7 +6,7 @@ title KARAN-D05 - Repo Downloader
 
 set "REPO[1]=Computing_Machinery_from_Scratch"
 set "REPO[2]=Assembler"
-set "REPO[3]=Gate-Level-Perceptron"
+set "REPO[3]=Gate-Level-Cybernetic-Classifier"
 set "REPO[4]=8-Bit-Computer"
 set "REPO[5]=Artificial-Neuron"
 set "REPO[6]=TopoCore"
@@ -23,7 +23,7 @@ echo ============================================
 echo.
 echo   1.  Computing_Machinery_from_Scratch
 echo   2.  Assembler
-echo   3.  Gate-Level-Perceptron
+echo   3.  Gate-Level-Cybernetic-Classifier
 echo   4.  8-Bit-Computer
 echo   5.  Artificial-Neuron
 echo   6.  TopoCore
