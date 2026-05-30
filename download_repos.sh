@@ -8,7 +8,7 @@ BRANCH="main"
 REPOS=(
     "Computing_Machinery_from_Scratch"
     "Assembler"
-    "Gate-Level-Perceptron"
+    "Gate-Level-Cybernetic-Classifier"
     "8-Bit-Computer"
     "Artificial-Neuron"
     "TopoCore"
