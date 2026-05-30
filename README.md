@@ -73,39 +73,6 @@ chmod +x download_repos.sh
 
 > Always downloads the latest version.
 
-## 🛠️ Toolchain & Repo Utilities - Built to make navigating and interacting with this repo easier
-
-### 💻 Terminal-Based Manual
-This project includes a built-in reference manual for the custom ASM language that can be queried directly from your terminal. View full manual: [asm-manual](https://github.com/KARAN-D05/Assembler/tree/main/asm-manual)
-
-**Linux / Mac:**
-```bash
-curl -O https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.sh
-chmod +x run-asm-manual.sh
-./run-asm-manual.sh
-```
-
-**Windows:**
-```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/asm-manual/run-asm-manual.ps1" -OutFile "run-asm-manual.ps1"
-powershell -ExecutionPolicy Bypass -File run-asm-manual.ps1
-```
-
-Full computing stack manual covering both the RAM hardware and this Assembly Language. One command for the complete reference: 
-View full manual: [stack-manual](https://github.com/KARAN-D05/Assembler/tree/main/stack-manual)
-
-**Linux / Mac:**
-```bash
-curl -O https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/run-stack-manual.sh
-chmod +x run-stack-manual.sh
-./run-stack-manual.sh
-```
-**Windows:**
-```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/KARAN-D05/Assembler/main/stack-manual/run-stack-manual.ps1" -OutFile "run-stack-manual.ps1"
-powershell -ExecutionPolicy Bypass -File run-stack-manual.ps1
-```
-
 ## 📜 License
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
