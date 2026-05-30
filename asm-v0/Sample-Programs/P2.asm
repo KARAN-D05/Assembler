@@ -93,8 +93,3 @@ Output during HOLD = 0110 (6)
 Post-HOLD Output   = 01101 (22)
 
 ---------------------------------------------------
-
-// It is advised to Use asm-v0.3 Standard Assembler:-
-// Features like Syntax and Semantic Analysis.
-// Output Error Statements indicating the error.
-// Compatible with asm-v0.2 standard.
