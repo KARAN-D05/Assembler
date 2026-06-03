@@ -45,15 +45,15 @@ insv2 = instructions[0][0:4]
 
 # BASIC SEMANTIC ANALYSIS
 if insv1 in ("ADD", "SUB", "DIV", "MUL", "FBK"):
-    print("-----------ERROR->INVALID SEMANTICS-------------")
-    print("----No Data Entered to perform operations on----")
-    print("----Program Not Processed By Assembler asmv0.4----")
+    print("-------------ERROR->INVALID SEMANTICS---------------")
+    print("------No Data Entered to perform operations on------")
+    print("----Program Not Processed By Assembler asmv0.3.1----")
     print()
     exit()
 
 if insv2 in ("OVRD", "RSTM"):
-    print("-----------MACHINE IN INITIAL STATE-------------")
-    print("----Program Not Processed By Assembler asmv0.4----")
+    print("--------------MACHINE IN INITIAL STATE--------------")
+    print("----Program Not Processed By Assembler asmv0.3.1----")
     print()
     exit()
 
@@ -64,39 +64,39 @@ BINARY = ('0', '1')
 for Q in instructions:
     if Q[0:4] != "LOAD" and Q[0:3] != "MUL":
         if Q not in valid_operations:
-            print("------INVALID SYNTAX------|INVALID MNEMONIC SYNTAX|")
-            print("----Program Not Processed By Assembler asmv0.4----")
+            print("-------INVALID SYNTAX-------|INVALID MNEMONIC SYNTAX|")
+            print("----Program Not Processed By Assembler asmv0.3.1----")
             print()
             exit()
 
 for ins in instructions:
     if ins[0:4] == "LOAD":
         if len(ins) != 11 or ins[4] != "-" or ins[6] != "-":
-            print("------INVALID SYNTAX------|INVALID LOAD SYNTAX|")
-            print("----Program Not Processed By Assembler asmv0.4----")
+            print("---------INVALID SYNTAX--------|INVALID LOAD SYNTAX|")
+            print("----Program Not Processed By Assembler asmv0.3.1----")
             print()
             exit()
         if ins[5] not in BINARY:
-            print("------INVALID SYNTAX------|Selector-> 0 or 1|")
-            print("----Program Not Processed By Assembler asmv0.4----")
+            print("----------INVALID SYNTAX---------|Selector-> 0 or 1|")
+            print("----Program Not Processed By Assembler asmv0.3.1----")
             print()
             exit()
         for ch in ins[7:]:
             if ch not in BINARY:
-                print("------INVALID SYNTAX------|Data-> Binary Strings|")
-                print("----Program Not Processed By Assembler asmv0.4----")
+                print("--------INVALID SYNTAX--------|Data-> Binary Strings|")
+                print("----Program Not Processed By Assembler asmv0.3.1----")
                 print()
                 exit()
     elif ins[0:3] == "MUL":
         if len(ins) != 8:
-            print("------INVALID SYNTAX------|INVALID MUL SYNTAX|")
-            print("----Program Not Processed By Assembler asmv0.4----")
+            print("--------INVALID SYNTAX----------|INVALID MUL SYNTAX|")
+            print("----Program Not Processed By Assembler asmv0.3.1----")
             print()
             exit()
         for ch in ins[4:]:
             if ch not in BINARY:
-                print("------INVALID SYNTAX------|Data-> Binary Strings|")
-                print("----Program Not Processed By Assembler asmv0.4----")
+                print("-------INVALID SYNTAX--------|Data-> Binary Strings|")
+                print("----Program Not Processed By Assembler asmv0.3.1----")
                 print()
                 exit()
 
@@ -158,7 +158,7 @@ for i, ins in enumerate(instructions):
 
 # Final validity check if every R ended up "-", nothing was processed
 if all(r == "-" for r in R):
-    print("------INVALID SYNTAX------|Program Not Processed By Assembler asmv0.4|")
+    print("------INVALID SYNTAX------|Program Not Processed By Assembler asmv0.3.1|")
     print()
 else:
     print()
