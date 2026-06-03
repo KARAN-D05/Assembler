@@ -3,7 +3,7 @@
 # No hardcoded instruction limit - keep entering until ASM-PROCESS
 # ASM-Process is not part of Assembly Language, its an instruction to the assembler.
 
-print("Directive ASM-PROCESS: asmv0.3.1 start processing \n")
+print("Directive ASM-PROCESS: asmv0.3.1 will start processing ")
 
 instructions = []
 idx = 1
