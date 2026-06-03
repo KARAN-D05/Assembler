@@ -1,4 +1,5 @@
-                                                                                  # ASSEMBLER V0.3 SOURCE CODE # 
+                                                                                  # ASSEMBLER V0.3 SOURCE CODE #
+
 # INPUT ASSEMBLY LANGAUGE PROGRAM
 instruction1 = input("Enter Instruction1: ")
 instruction2 = input("Enter Instruction2: ")
@@ -8,6 +9,8 @@ instruction5 = input("Enter Instruction5: ")
 instruction6 = input("Enter Instruction6: ")
 instruction7 = input("Enter Instruction7: ")
 instruction8 = input("Enter Instruction8: ")
+instruction9 = input("Enter Instruction9: ")
+instruction10 = input("Enter Instruction10: ")
 print()
 
 # Initializing RUN variables to "EXECUTED" for Instruction Execution Analysis
@@ -19,6 +22,8 @@ R5 = "EXECUTED"
 R6 = "EXECUTED"
 R7 = "EXECUTED"
 R8 = "EXECUTED"
+R9 = "EXECUTED"
+R10 = "EXECUTED"
 
 # NO INPUT TO ASSEMBLER
 if instruction1 == "" and instruction2 == "" and instruction3 == "" and instruction4 == "" and instruction5 == "" and instruction6 == "" and instruction7 == "" and instruction8 == "":
@@ -189,6 +194,7 @@ if instruction3 != " ":
             print(a)
     else:
         R3 = "-"
+      
 # INSTRUCTION 4
 if instruction4 != " ":
     if len(instruction4) == 11:
@@ -222,6 +228,7 @@ if instruction4 != " ":
             print(b)
     else:
         R4 = "-"
+      
 # INSTRUCTION 5
 if instruction5 != " ":
     if len(instruction5) == 11:
@@ -255,6 +262,7 @@ if instruction5 != " ":
             print(c)
     else:
         R5 = "-"
+      
 # INSTRUCTION 6
 if instruction6 != " ":
     if len(instruction6) == 11:
@@ -263,8 +271,8 @@ if instruction6 != " ":
         print(f"00{ins13}{ins14[0]}00{ins14[1]}000{ins14[2]}{ins14[3]}0000")
         print(f"01{ins13}0000000000000")
     elif instruction6 == "FBK":
-        e = "1000000000000000"
-        print(e)
+       e = "1000000000000000"
+       print(e)
     elif instruction6 == "ADD":
         e = "DEFAULT ARITHMETIC OPERATION"
         print(e)
@@ -288,6 +296,7 @@ if instruction6 != " ":
             print(d)
     else:
         R6 = "-"
+      
 # INSTRUCTION 7
 if instruction7 != " ":
     if len(instruction7) == 11:
@@ -321,6 +330,7 @@ if instruction7 != " ":
             print(e)
     else:
         R7 = "-"
+      
 # INSTRUCTION 8
 if instruction8 != " ":
     if len(instruction8) == 11:
@@ -353,10 +363,78 @@ if instruction8 != " ":
         for x in range(D-1):
             print(f)            
     else:
-        R8 = "-"        
+        R8 = "-"
+      
+# INSTRUCTION 9
+if instruction9 != " ":
+    if len(instruction9) == 11:
+        ins22 = instruction9[5]
+        ins23 = instruction9[7:11]
+        print(f"00{ins22}{ins23[0]}00{ins23[1]}000{ins23[2]}{ins23[3]}0000")
+        print(f"01{ins22}0000000000000")
+    elif instruction9 == "FBK":
+        h = "1000000000000000"
+        print(h)
+    elif instruction9 == "ADD":
+        h = "DEFAULT ARITHMETIC OPERATION"
+        print(h)
+    elif instruction9 == "SUB":
+        h = "0000100000000000"
+        print(h)
+    elif instruction9 == "DIV":
+        h = "0000000010000000"
+        print(h)
+    elif instruction9 == "OVRD":
+        print("0000000001000000")
+    elif instruction9 == "RSTM":
+        print("0000010000000000")
+    elif len(instruction9) == 8:
+        ins24 = instruction9[4:8]
+        h = f"000000010000{ins24}"
+        print(h)
+    elif instruction9 == "HOLD-OP":
+        D = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(D-1):
+            print(g)            
+    else:
+        R9 = "-"    
+      
+# INSTRUCTION 10
+if instruction9 != " ":
+    if len(instruction10) == 11:
+        ins25 = instruction10[5]
+        ins26 = instruction10[7:11]
+        print(f"00{ins25}{ins26[0]}00{ins26[1]}000{ins26[2]}{ins26[3]}0000")
+        print(f"01{ins25}0000000000000")
+    elif instruction10 == "FBK":
+        i = "1000000000000000"
+        print(i)
+    elif instruction10 == "ADD":
+        i = "DEFAULT ARITHMETIC OPERATION"
+        print(i)
+    elif instruction10 == "SUB":
+        i = "0000100000000000"
+        print(i)
+    elif instruction10 == "DIV":
+        i = "0000000010000000"
+        print(i)
+    elif instruction10 == "OVRD":
+        print("0000000001000000")
+    elif instruction10 == "RSTM":
+        print("0000010000000000")
+    elif len(instruction10) == 8:
+        ins27 = instruction10[4:8]
+        i = f"000000010000{ins27}"
+        print(i)
+    elif instruction10 == "HOLD-OP":
+        D = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(D-1):
+            print(h)            
+    else:
+        R10 = "-"
 
 # If All RUN Variables(R1-R8) have become empty, we can conclucde that No Instruction Inputted have been able to be processed by Assembler, thus Invalid Syntax was Entered
-if R1 == "" and R2 == "" and R3 == "" and R4 == "" and R5 == "" and R6 == "" and R7 == "" and R8 == "": # Asembly Language Instructions cannot be processed by the Assembler asmv0.3
+if R1 == "" and R2 == "" and R3 == "" and R4 == "" and R5 == "" and R6 == "" and R7 == "" and R8 == "" and R9 == "" and R10 == "": # Asembly Language Instructions cannot be processed by the Assembler asmv0.3
     print("------INVALID SYNTAX------|Program Not Processed By Assembler asmv0.3|")
     print()
 else:
@@ -373,4 +451,6 @@ print(f"Instruction5: {R5}")
 print(f"Instruction6: {R6}")
 print(f"Instruction7: {R7}")    
 print(f"Instruction8: {R8}")
+print(f"Instruction9: {R9}")    
+print(f"Instruction10: {R10}")
 print()
