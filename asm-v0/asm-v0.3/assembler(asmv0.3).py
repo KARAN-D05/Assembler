@@ -1,5 +1,7 @@
                                                                                    # ASSEMBLER V0.3 SOURCE CODE #
-# Supports 10 Instructions, can be extended by changing the source code
+# Supports 10 Instructions
+# Supported instructions can be increased by extending the source code
+
 # INPUT ASSEMBLY LANGAUGE PROGRAM
 instruction1 = input("Enter Instruction1: ")
 instruction2 = input("Enter Instruction2: ")
