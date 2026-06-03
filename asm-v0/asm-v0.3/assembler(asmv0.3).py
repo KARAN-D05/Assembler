@@ -1,4 +1,4 @@
-                                                                                  # ASSEMBLER V0.3 SOURCE CODE #
+                                                                                   # ASSEMBLER V0.3 SOURCE CODE #
 
 # INPUT ASSEMBLY LANGAUGE PROGRAM
 instruction1 = input("Enter Instruction1: ")
