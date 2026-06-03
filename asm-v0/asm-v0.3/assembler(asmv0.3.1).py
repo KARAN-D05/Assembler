@@ -19,8 +19,8 @@ print()
 
 # ASM-PROCESS with no instructions above it
 if len(instructions) == 0:
-    print("----NO INSTRUCTIONS TO PROCESS----")
-    print("----Program Not Processed By Assembler asmv0.4----")
+    print("------------NO INSTRUCTIONS TO PROCESS--------------")
+    print("----Program Not Processed By Assembler asmv0.3.1----")
     print()
     exit()
 
