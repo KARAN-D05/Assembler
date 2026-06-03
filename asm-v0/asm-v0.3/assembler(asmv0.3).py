@@ -288,7 +288,7 @@ if instruction6 != " ":
         print("0000010000000000")
     elif len(instruction6) == 8:
         ins15 = instruction6[4:8]
-        e = f"000000010000{ins12}"
+        e = f"000000010000{ins15}"
         print(e)
     elif instruction6 == "HOLD-OP":
         K = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
