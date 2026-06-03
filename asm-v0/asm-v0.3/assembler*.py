@@ -3,8 +3,7 @@
 # No hardcoded instruction limit - keep entering until ASM-PROCESS
 # NOTE: ASM-Process is not part of Assembly Language, its an instruction to the assembler.
 
-print("Assembler asmv0.3.1 | Enter instructions one by one.")
-print("Type ASM-PROCESS when done.\n")
+print("Directive ASM-PROCESS: asmv0.3.1 start processing \n")
 
 instructions = []
 idx = 1
@@ -163,7 +162,7 @@ if all(r == "-" for r in R):
     print()
 else:
     print()
-    print("==>PROGRAM PROCESSED BY ASSEMBLER asmv0.4")
+    print("==>PROGRAM PROCESSED BY ASSEMBLER asmv0.3.1")
     print()
 
 print("INSTRUCTION EXECUTION REPORT")
