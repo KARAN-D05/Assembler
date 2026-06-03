@@ -5,7 +5,7 @@
  mnemonics we get -**The Assembly Language**.
 
 ## 🧾 Custom Assembly Language Instructions - asm-v0
-> Instruction set reflects the hardware primitives of the repeated arithmetic machine.
+> Instruction set reflects the hardware primitives of the machine.
 <p align="center">
   <img src="asm-v0/Mnemonics.png" width="1500"/>
   <br>
