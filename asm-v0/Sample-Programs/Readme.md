@@ -18,3 +18,4 @@
 | 4 | Multiplication | MUL, HOLD-OP, XXXX-1 rule |
 | 5 | Overflow, fault-detection & Recovery | OVRD, overflow detection |
 | 6 | Machine Reset | RSTM |
+| 7 | Arithmetic Progression Generator | FBK, repeated addition, sequence generation |
