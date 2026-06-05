@@ -7,7 +7,7 @@
 | asm-v0.1 | asm-v0.1 assembler only |
 | asm-v0.2 / asm-v0.3 | asm-v0.2 or asm-v0.3 assembler |
 
-**` It is advised to use asm-v0.3 assembler - includes syntax analysis, semantic analysis and execution report.`**
+**` It is advised to use asm-v0.3.1 assembler - includes syntax analysis, semantic analysis, flexible Program Length and execution report.`**
 
 ### ▸ Programs
 | S.No. | Program | Demonstrates |
