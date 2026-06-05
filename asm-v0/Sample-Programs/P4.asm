@@ -19,7 +19,6 @@ HOLD-OP     // Hold operation/output for arbitrary number of clock cycles then b
 ---------------------------------------------------
 # EXECUTION TRACE
 ---------------------------------------------------
-
 Initial State:
 A = 0000 (0)
 B = 0000 (0)
@@ -40,7 +39,6 @@ Program Execution (asm-v0.2 / asm-v0.3)
 ----------------------------------------------------
 2) MUL-0010
 ----------------------------------------------------
-
 Multiplier Field = 0010 (4)
 Effective Multiplication = B × (Multiplier - 1)
                          = 2 × 3
@@ -50,13 +48,11 @@ the system performs repeated addition / convergence
 across multiple clock cycles until the final product stabilizes.
 
 Intermediate Convergence:
-
 Cycle 1: 2
 Cycle 2: 2 + 2 = 4
 Cycle 3: 4 + 2 = 6
 
 Final Product = 6
-
 Binary Output = 0110 (6)
 
 Multiplicative Convergence LED → ON
@@ -65,7 +61,6 @@ Multiplicative Convergence LED → ON
 ----------------------------------------------------
 3) HOLD-OP
 ----------------------------------------------------
-
 Output held constant at:
 0110 (6)
 
@@ -81,7 +76,6 @@ is implemented using repeated Addition using Register A and B.
 ----------------------------------------------------
 Final System State
 ----------------------------------------------------
-
 Register A = 0000 (0)
 Register B = 0100 (2)
 Output     = 0110 (6)
