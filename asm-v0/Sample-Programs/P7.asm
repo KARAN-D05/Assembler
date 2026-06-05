@@ -27,9 +27,6 @@ ADD         // 12 + 2 = 14
 FBK         // Feed output back to Register A
 ADD         // 14 + 2 = 16
 
-// Generates the Arithmetic Progression: 2, 4, 6, 8, 10, 12, 14, 16
-// Simultaneously demonstrates: Arithmetic Progression Generation, Multiplication by Repeated Addition, Explicit Feedback Driven Computation
-
 ---------------------------------------------------
 # EXECUTION TRACE
 ---------------------------------------------------
