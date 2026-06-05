@@ -18,7 +18,6 @@ HOLD-OP     // Hold operation/output for arbitrary number of clock cycles then b
 ---------------------------------------------------
 # EXECUTION TRACE
 ---------------------------------------------------
-
 Initial State:
 A = 0000 (0)
 B = 0000 (0)
@@ -33,7 +32,6 @@ Program Execution (asm-v0.2 / asm-v0.3)
 
 2) LOAD-1-0100
    Register B ← 0100 (2)
-
    Current State:
    A = 0111 (14)
    B = 0100 (2)
@@ -41,16 +39,13 @@ Program Execution (asm-v0.2 / asm-v0.3)
 ----------------------------------------------------
 3) DIV
 ----------------------------------------------------
-
 Operation: A ÷ B
 14 ÷ 2 = 7
-
 Since division is iterative in hardware,
 the system performs repeated subtraction / convergence
 across multiple clock cycles until a stable quotient is reached.
 
 Intermediate Convergence:
-
 Cycle 1: 14 - 2 = 12
 Cycle 2: 12 - 2 = 10
 Cycle 3: 10 - 2 = 8
@@ -60,19 +55,15 @@ Cycle 6: 4  - 2 = 2
 Cycle 7: 2  - 2 = 0
 
 Quotient = 7
-
 Binary Output = 1110 (7)
-
 Divisibility Convergence LED → ON
 (System has reached stable state)
 
 ----------------------------------------------------
 4) HOLD-OP
 ----------------------------------------------------
-
 Output held constant at:
 1110 (7)
-
 HOLD-OP must be sustained for at least
 the number of quotient clock cycles to allow
 full convergence and stable output.
@@ -85,7 +76,6 @@ division output lines.
 ----------------------------------------------------
 Final System State
 ----------------------------------------------------
-
 Register A = 0111 (14)
 Register B = 0100 (2)
 Output     = 1110 (7)
