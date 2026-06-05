@@ -19,7 +19,6 @@ HOLD-OP     // Hold operation/output for arbitrary number of clock cycles then b
 ---------------------------------------------------
 # EXECUTION TRACE
 ---------------------------------------------------
-
 Initial State:
 A = 0000 (0)
 B = 0000 (0)
@@ -34,7 +33,6 @@ Program Execution (asm-v0.2 / asm-v0.3)
 
 2) LOAD-1-0001
    Register B ← 0001 (8)
-
    Current State:
    A = 0110 (6)
    B = 0001 (8)
@@ -42,16 +40,13 @@ Program Execution (asm-v0.2 / asm-v0.3)
 ----------------------------------------------------
 3) ADD  (Default Operation)
 ----------------------------------------------------
-
 A + B = 6 + 8 = 14
 Binary Output = 0111 (14)
 
 ----------------------------------------------------
 4) FBK  (Feedback)
 ----------------------------------------------------
-
 Register A ← 0111 (14)
-
    Current State:
    A = 0111 (14)
    B = 0001 (8)
@@ -59,34 +54,28 @@ Register A ← 0111 (14)
 ----------------------------------------------------
 5) SUB
 ----------------------------------------------------
-
 A - B = 14 - 8 = 6
 Binary Output = 0110 (6)
 
 ----------------------------------------------------
 6) HOLD-OP
 ----------------------------------------------------
-
 Output held constant at:
 0110 (6)
-
 The value remains on the output lines for the specified
 number of clock cycles.
-
 After HOLD duration expires:
 System automatically returns to Default Operation (ADD).
 
 ----------------------------------------------------
 Post-HOLD Default ADD
 ----------------------------------------------------
-
 A + B = 14 + 8 = 22
 Binary Output = 01101 (22)
 
 ----------------------------------------------------
 Final System State
 ----------------------------------------------------
-
 Register A = 0111 (14)
 Register B = 0001 (8)
 Output during HOLD = 0110 (6)
