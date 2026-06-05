@@ -23,7 +23,6 @@ LOAD-1-1100 // Load 1100(3) on Data Lines and store in Register B
 ----------------------------------------------------
 # EXECUTION TRACE                                  
 ----------------------------------------------------
-
 Initial State:
 A = 0000 (0)
 B = 0000 (0)
@@ -38,7 +37,6 @@ asm-v0.1 Execution (LOAD + STORE separated)
 
 2) STORE
    Register A ← 1001 (9)
-
    Current State:
    A = 1001 (9)
    B = 0000 (0)
@@ -48,7 +46,6 @@ asm-v0.1 Execution (LOAD + STORE separated)
 
 4) STORE
    Register B ← 1100 (3)
-
    Current State:
    A = 1001 (9)
    B = 1100 (3)
@@ -62,7 +59,6 @@ asm-v0.2 / asm-v0.3 Execution (STORE abstracted)
 
 2) LOAD-1-1100
    Register B ← 1100 (3)
-
    Current State:
    A = 1001 (9)
    B = 1100 (3)
@@ -70,16 +66,13 @@ asm-v0.2 / asm-v0.3 Execution (STORE abstracted)
 ----------------------------------------------------
 Arithmetic Operation
 ----------------------------------------------------
-
 Default Operation: ADD
-
 A + B = 9 + 3 = 12
 Binary Output = 0011 (12)
 
 ----------------------------------------------------
 Final System State
 ----------------------------------------------------
-
 Register A = 1001 (9)
 Register B = 1100 (3)
 Output     = 0011 (12)
