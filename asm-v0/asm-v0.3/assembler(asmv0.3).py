@@ -1,4 +1,4 @@
-                                                                                   # ASSEMBLER V0.3 SOURCE CODE #
+                                                                                 # ASSEMBLER V0.3 SOURCE CODE #
 # Supports 10 Instructions
 # Supported instructions can be increased by extending the source code
 
