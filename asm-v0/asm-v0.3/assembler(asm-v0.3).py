@@ -396,8 +396,8 @@ if instruction9 != " ":
         h = f"000000010000{ins24}"
         print(h)
     elif instruction9 == "HOLD-OP":
-        D = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
-        for x in range(D-1):
+        M = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(M-1):
             print(g)            
     else:
         R9 = "-"    
@@ -430,8 +430,8 @@ if instruction9 != " ":
         i = f"000000010000{ins27}"
         print(i)
     elif instruction10 == "HOLD-OP":
-        D = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
-        for x in range(D-1):
+        N = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(N-1):
             print(h)            
     else:
         R10 = "-"
