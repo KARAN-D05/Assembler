@@ -9,6 +9,8 @@ instruction5 = input("Enter Instruction5: ")
 instruction6 = input("Enter Instruction6: ")
 instruction7 = input("Enter Instruction7: ")
 instruction8 = input("Enter Instruction8: ")
+instruction9 = input("Enter Instruction9: ")
+instruction10 = input("Enter Instruction10: ")
 
 # STRING DIVISION INTO SUBSTRINGS FOR CONTROL FLOW
 ins1 = instruction1[0:4] # LOAD
@@ -216,8 +218,8 @@ if instruction8 != " ":
         print(f"00{ins19}{ins20[0]}00{ins20[1]}000{ins20[2]}{ins20[3]}0000")
         print(f"01{ins19}0000000000000")
     elif instruction8 == "FBK":
-        f = "1000000000000000"
-        print(f)
+        g = "1000000000000000"
+        print(g)
     elif instruction8 == "ADD":
         g = "DEFAULT ARITHMETIC OPERATION"
         print(g)
@@ -240,6 +242,71 @@ if instruction8 != " ":
         for x in range(D-1):
 
             print(f)    
-            
-# EXTENDABLE TO AS MANY INSTRUCTIONS ONE WANTS TO HAVE FOR PROGRAMMING THE MACHINE
 
+# INSTRUCTION 9
+if instruction9 != " ":
+    if len(instruction9) == 11:
+        ins22 = instruction9[5]
+        ins23 = instruction9[7:11]
+        print(f"00{ins22}{ins23[0]}00{ins23[1]}000{ins23[2]}{ins23[3]}0000")
+        print(f"01{ins22}0000000000000")
+    elif instruction9 == "FBK":
+        h = "1000000000000000"
+        print(h)
+    elif instruction9 == "ADD":
+        h = "DEFAULT ARITHMETIC OPERATION"
+        print(h)
+    elif instruction9 == "SUB":
+        h = "0000100000000000"
+        print(h)
+    elif instruction9 == "DIV":
+        h = "0000000010000000"
+        print(h)
+    elif instruction9 == "OVRD":
+        print("0000000001000000")
+    elif instruction9 == "RSTM":
+        print("0000010000000000")
+    elif len(instruction9) == 8:
+        ins24 = instruction9[4:8]
+        h = f"000000010000{ins24}"
+        print(h)
+    elif instruction8 == "HOLD-OP":
+        M = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(M-1):
+
+            print(g) 
+
+# INSTRUCTION 10
+if instruction10 != " ":
+    if len(instruction10) == 11:
+        ins25 = instruction10[5]
+        ins26 = instruction10[7:11]
+        print(f"00{ins25}{ins26[0]}00{ins26[1]}000{ins26[2]}{ins26[3]}0000")
+        print(f"01{ins25}0000000000000")
+    elif instruction10 == "FBK":
+        i = "1000000000000000"
+        print(i)
+    elif instruction10 == "ADD":
+        i = "DEFAULT ARITHMETIC OPERATION"
+        print(i)
+    elif instruction10 == "SUB":
+        i = "0000100000000000"
+        print(i)
+    elif instruction10 == "DIV":
+        i = "0000000010000000"
+        print(i)
+    elif instruction10 == "OVRD":
+        print("0000000001000000")
+    elif instruction10 == "RSTM":
+        print("0000010000000000")
+    elif len(instruction10) == 8:
+        ins27 = instruction10[4:8]
+        i = f"000000010000{ins27}"
+        print(i)
+    elif instruction10 == "HOLD-OP":
+        N = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
+        for x in range(N-1):
+
+            print(h) 
+          
+# EXTENDABLE TO AS MANY INSTRUCTIONS ONE WANTS TO HAVE FOR PROGRAMMING THE MACHINE
