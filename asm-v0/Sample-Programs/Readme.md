@@ -21,4 +21,4 @@
 | 7 | Arithmetic Progression Generator | FBK, sequence generation |
 
 ### 🧩 Machine Code Translations
-- Pre-assembled **binary files** ([Machine-Codes](Machine-Codes)) for the sample assembly programs.
+- Pre-assembled **binary files** ([Machine-Codes](Machine-Codes)) for the sample assembly programs(P1.asm - P7.asm)
