@@ -19,3 +19,6 @@
 | 5 | Overflow, fault-detection & Recovery | OVRD, overflow detection |
 | 6 | Machine Reset | RSTM |
 | 7 | Arithmetic Progression Generator | FBK, sequence generation |
+
+### Machine Code Translations
+- Pre-assembled **binary files** ([Machine-Codes](Machine-Codes)) for the sample assembly programs.
