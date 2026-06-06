@@ -270,7 +270,7 @@ if instruction9 != " ":
         ins24 = instruction9[4:8]
         h = f"000000010000{ins24}"
         print(h)
-    elif instruction8 == "HOLD-OP":
+    elif instruction9 == "HOLD-OP":
         M = int(input("ENTER CLOCK CYCLES FOR HOLD OPERATION:"))
         for x in range(M-1):
 
