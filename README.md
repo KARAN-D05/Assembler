@@ -15,8 +15,8 @@
 👉 [Refer Sample Programs](asm-v0/Sample-Programs)
 
 ## ⚙️ Implementation Stack
-![Python](https://img.shields.io/badge/Python-00B0FF?style=for-the-badge)
-![Custom Assembly](https://img.shields.io/badge/Custom%20Assembly-D50000?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-Assembler-00B0FF?style=flat-square)
+![Custom Assembly](https://img.shields.io/badge/Custom%20Assembly-Test%Programs-D50000?style=flat-square)
 
 ## 🧱 Versions Built
 - [asmv0.1](asm-v0/asm-v0.1) -> Mapped Data control operations to assembly Language.
