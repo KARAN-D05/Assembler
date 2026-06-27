@@ -7,9 +7,8 @@ title KARAN-D05 - Repo Downloader
 set "REPO[1]=Computing_Machinery_from_Scratch"
 set "REPO[2]=Assembler"
 set "REPO[3]=Gate-Level-Cybernetic-Classifier"
-set "REPO[4]=8-Bit-Computer"
+set "REPO[4]=8Bit-Computer-rtl"
 set "REPO[5]=Artificial-Neuron"
-set "REPO[6]=TopoCore"
 
 set "BASE_URL=https://github.com/KARAN-D05"
 set "RAW_URL=https://raw.githubusercontent.com/KARAN-D05"
@@ -24,9 +23,8 @@ echo.
 echo   1.  Computing_Machinery_from_Scratch
 echo   2.  Assembler
 echo   3.  Gate-Level-Cybernetic-Classifier
-echo   4.  8-Bit-Computer
+echo   4.  8Bit-Computer-rtl
 echo   5.  Artificial-Neuron
-echo   6.  TopoCore
 echo   A.  Download ALL repos
 echo   Q.  Quit
 echo.
@@ -44,7 +42,7 @@ if /i "%CHOICE%"=="Q" (
 )
 
 if /i "%CHOICE%"=="A" (
-    set "CHOICE=1 2 3 4 5 6"
+    set "CHOICE=1 2 3 4 5"
 )
 
 set "DOWNLOADED=0"
@@ -52,7 +50,7 @@ set "FAILED=0"
 
 for %%T in (%CHOICE%) do (
     set "VALID=0"
-    for /L %%I in (1,1,6) do (
+    for /L %%I in (1,1,5) do (
         if "%%T"=="%%I" set "VALID=1"
     )
     if "!VALID!"=="0" (
