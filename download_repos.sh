@@ -9,9 +9,8 @@ REPOS=(
     "Computing_Machinery_from_Scratch"
     "Assembler"
     "Gate-Level-Cybernetic-Classifier"
-    "8-Bit-Computer"
+    "8Bit-Computer-rtl"
     "Artificial-Neuron"
-    "TopoCore"
 )
 RED='\033[0;31m'; GREEN='\033[0;32m'
 CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
@@ -68,14 +67,14 @@ while true; do
     fi
 
     if [[ "${INPUT,,}" == "a" ]]; then
-        INPUT="1 2 3 4 5 6"
+        INPUT="1 2 3 4 5"
     fi
 
     DOWNLOADED=0
     FAILED=0
 
     for TOKEN in $INPUT; do
-        if ! [[ "$TOKEN" =~ ^[1-6]$ ]]; then
+        if ! [[ "$TOKEN" =~ ^[1-5]$ ]]; then
             echo -e "\n${RED}  \"${TOKEN}\" is not a valid option -- skipping.${RESET}"
             continue
         fi
