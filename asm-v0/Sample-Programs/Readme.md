@@ -18,7 +18,7 @@
 | 4 | Multiplication | MUL, HOLD-OP, XXXX-1 rule |
 | 5 | Overflow, fault-detection & Recovery | OVRD, overflow detection |
 | 6 | Machine Reset | RSTM |
-| 7 | Arithmetic Progression Generator | FBK, sequence generation |
+| 7 | Arithmetic Progression Generator | FBK, ADD, sequence generation |
 
 ### 🧩 Machine Code Translations
 - Pre-assembled **binary files** ([Machine-Codes](Machine-Codes)) for the sample assembly programs(P1.asm - P7.asm)
