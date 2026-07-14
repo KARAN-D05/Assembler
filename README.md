@@ -51,9 +51,9 @@
 - Advanced Semantic Analysis for the assembly language, enabling validation and structured interpretation of programs before translation to machine code.
 - Mapping multiple sequences of low-level instructions into a single mnemonic, enabling higher-level abstractions and more complex machine functionality with fewer lines of assembly code - `MACROS`
 
-## 🧰 Computing Machinery from Scratch
+## 🧰 Feedback-Driven Stored Program System
 - To follow along it is advised to check out the underlying hardware upon which we are building the assembly language.
-- [Check out Computing Machinery from scratch](https://github.com/KARAN-D05/Computing_Machinery_from_Scratch)
+- [Check out Feedback-Driven Stored-Program System](https://github.com/KARAN-D05/Feedback-Driven-Stored-Program-System)
 
 ## ⬇️ Download This Repository
 
