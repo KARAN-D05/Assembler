@@ -6,10 +6,10 @@ BASE_URL="https://github.com/KARAN-D05"
 RAW_URL="https://raw.githubusercontent.com/KARAN-D05"
 BRANCH="main"
 REPOS=(
-    "Computing_Machinery_from_Scratch"
+    "Feedback-Driven-Stored-Program-System"
     "Assembler"
     "Gate-Level-Cybernetic-Classifier"
-    "8Bit-Computer-rtl"
+    "Harvard-Processor"
     "Artificial-Neuron"
 )
 RED='\033[0;31m'; GREEN='\033[0;32m'
