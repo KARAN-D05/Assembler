@@ -4,10 +4,10 @@
 setlocal enabledelayedexpansion
 title KARAN-D05 - Repo Downloader
 
-set "REPO[1]=Computing_Machinery_from_Scratch"
+set "REPO[1]=Feedback-Driven-Stored-Program-System"
 set "REPO[2]=Assembler"
 set "REPO[3]=Gate-Level-Cybernetic-Classifier"
-set "REPO[4]=8Bit-Computer-rtl"
+set "REPO[4]=Harvard-Processor"
 set "REPO[5]=Artificial-Neuron"
 
 set "BASE_URL=https://github.com/KARAN-D05"
@@ -20,10 +20,10 @@ echo ============================================
 echo   KARAN-D05  ^|  Repository Downloader
 echo ============================================
 echo.
-echo   1.  Computing_Machinery_from_Scratch
+echo   1.  Feedback-Driven-Stored-Program-System
 echo   2.  Assembler
 echo   3.  Gate-Level-Cybernetic-Classifier
-echo   4.  8Bit-Computer-rtl
+echo   4.  Harvard-Processor
 echo   5.  Artificial-Neuron
 echo   A.  Download ALL repos
 echo   Q.  Quit
